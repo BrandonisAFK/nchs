@@ -25,9 +25,9 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#9b87f5",
-          light: "#D6BCFA",
-          dark: "#7C5FF2",
+          DEFAULT: "#403E43",
+          light: "#555555",
+          dark: "#1A1F2C",
         },
         neutral: {
           DEFAULT: "#8E9196",
@@ -58,10 +58,19 @@ export default {
             opacity: "1",
           },
         },
+        "background-shine": {
+          "0%": {
+            backgroundPosition: "0% 50%",
+          },
+          "100%": {
+            backgroundPosition: "100% 50%",
+          },
+        },
       },
       animation: {
         "fade-up": "fade-up 0.5s ease-out",
         "fade-in": "fade-in 0.3s ease-out",
+        "background-shine": "background-shine 2s linear infinite",
       },
     },
   },
