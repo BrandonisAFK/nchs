@@ -1,19 +1,22 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 export const Hero = () => {
+  const navigate = useNavigate();
+
   return (
-    <div className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-primary-dark">
+    <div className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-[#1E293B]">
       {/* Animated background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-primary-dark via-primary to-neutral-dark">
+      <div className="absolute inset-0 bg-gradient-to-b from-[#1E293B] via-[#334155] to-[#475569]">
         <div 
           className="absolute inset-0 opacity-30"
           style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FFFFFF' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%238B5CF6' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
             animation: 'moveBackground 30s linear infinite',
           }} 
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-primary-dark to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#1E293B] to-transparent" />
       </div>
       
       {/* Content */}
@@ -29,14 +32,16 @@ export const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-up opacity-0"
                style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}>
             <Button 
-              className="bg-white hover:bg-gray-100 text-primary-dark px-8 py-6 text-lg group w-full sm:w-auto"
+              onClick={() => navigate('/booking')}
+              className="bg-[#8B5CF6] hover:bg-[#7C3AED] text-white px-8 py-6 text-lg group w-full sm:w-auto"
             >
               Book Now
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button 
+              onClick={() => navigate('/services')}
               variant="outline"
-              className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-lg w-full sm:w-auto backdrop-blur-sm"
+              className="border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6]/10 px-8 py-6 text-lg w-full sm:w-auto backdrop-blur-sm"
             >
               Our Services
             </Button>
@@ -45,7 +50,7 @@ export const Hero = () => {
       </div>
       
       {/* Decorative elements */}
-      <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-neutral-dark to-transparent" />
+      <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-[#475569] to-transparent" />
     </div>
   );
 };
