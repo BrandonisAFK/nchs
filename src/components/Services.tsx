@@ -1,4 +1,4 @@
-import { Brush, Home, Building2, Star, Sparkles, Broom } from "lucide-react";
+import { Brush, Home, Building2, Star, Sparkles } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const services = [
@@ -28,7 +28,7 @@ const services = [
     description: "Custom cleaning solutions for specific needs including post-construction cleanup, event preparation and cleanup, or specialized floor and carpet treatments. We work with you to develop a cleaning plan that meets your unique requirements.",
   },
   {
-    icon: Broom,
+    icon: Brush,
     title: "Recurring Service Plans",
     description: "Regular cleaning schedules tailored to your needs - weekly, bi-weekly, or monthly. Enjoy consistent, reliable service with the same trusted cleaning team. Save money with our recurring service packages while maintaining a consistently clean space.",
   }
