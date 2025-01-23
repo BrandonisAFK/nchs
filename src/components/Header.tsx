@@ -6,7 +6,7 @@ export const Header = () => {
   const navigate = useNavigate();
   
   return (
-    <header className="fixed w-full top-0 z-50 bg-[#064E3B]/80 backdrop-blur-md border-b border-[#22C55E]/20">
+    <header className="fixed w-full top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div 
           onClick={() => navigate('/')}

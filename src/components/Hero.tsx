@@ -6,7 +6,7 @@ export const Hero = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-[#064E3B] to-[#065F46]">
+    <div className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-slate-900 to-slate-800">
       {/* Animated background */}
       <div className="absolute inset-0">
         <div 
@@ -16,7 +16,7 @@ export const Hero = () => {
             animation: 'moveBackground 30s linear infinite',
           }} 
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1E293B] to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent" />
       </div>
       
       {/* Content */}
@@ -89,7 +89,7 @@ export const Hero = () => {
       </div>
       
       {/* Decorative elements */}
-      <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-[#1E293B] to-transparent" />
+      <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-slate-900 to-transparent" />
     </div>
   );
 };
