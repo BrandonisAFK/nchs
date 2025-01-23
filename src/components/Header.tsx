@@ -1,18 +1,19 @@
 import { Button } from "@/components/ui/button";
-import { Phone } from "lucide-react";
+import { Phone, Sparkles } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 export const Header = () => {
   const navigate = useNavigate();
   
   return (
-    <header className="fixed w-full top-0 z-50 bg-[#1E293B]/80 backdrop-blur-md border-b border-[#8B5CF6]/20">
+    <header className="fixed w-full top-0 z-50 bg-[#064E3B]/80 backdrop-blur-md border-b border-[#22C55E]/20">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div 
           onClick={() => navigate('/')}
-          className="relative group cursor-pointer"
+          className="flex items-center gap-3 relative group cursor-pointer"
         >
-          <div className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#8B5CF6] via-[#D946EF] to-[#8B5CF6] animate-background-shine bg-[length:400%_100%]">
+          <Sparkles className="w-8 h-8 text-[#22C55E] animate-pulse" />
+          <div className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#22C55E] via-[#4ADE80] to-[#22C55E] animate-background-shine bg-[length:400%_100%]">
             New Covenant Home Services
           </div>
           <div className="absolute inset-0 bg-white/20 blur-lg opacity-0 group-hover:opacity-20 transition-opacity duration-500" />
@@ -25,7 +26,7 @@ export const Header = () => {
                 e.preventDefault();
                 navigate('/services');
               }} 
-              className="text-gray-300 hover:text-[#8B5CF6] transition-colors"
+              className="text-gray-300 hover:text-[#22C55E] transition-colors"
             >
               Services
             </a>
@@ -35,14 +36,14 @@ export const Header = () => {
                 e.preventDefault();
                 navigate('/booking');
               }}  
-              className="text-gray-300 hover:text-[#8B5CF6] transition-colors"
+              className="text-gray-300 hover:text-[#22C55E] transition-colors"
             >
               Contact
             </a>
           </nav>
           <Button 
             onClick={() => navigate('/booking')}
-            className="bg-[#8B5CF6] hover:bg-[#7C3AED] text-white backdrop-blur-sm flex items-center gap-2"
+            className="bg-[#22C55E] hover:bg-[#16A34A] text-white backdrop-blur-sm flex items-center gap-2"
           >
             <Phone className="h-4 w-4" />
             <span className="hidden sm:inline">Book Now</span>
