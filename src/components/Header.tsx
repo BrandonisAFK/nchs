@@ -29,7 +29,6 @@ export const Header = () => {
             >
               Services
             </a>
-            <a href="#why-choose-us" className="text-gray-300 hover:text-[#8B5CF6] transition-colors">Why Us</a>
             <a 
               href="#contact"
               onClick={(e) => {
@@ -46,7 +45,7 @@ export const Header = () => {
             className="bg-[#8B5CF6] hover:bg-[#7C3AED] text-white backdrop-blur-sm flex items-center gap-2"
           >
             <Phone className="h-4 w-4" />
-            <span className="hidden sm:inline">Contact Us</span>
+            <span className="hidden sm:inline">Book Now</span>
           </Button>
         </div>
       </div>

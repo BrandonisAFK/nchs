@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 
@@ -29,6 +29,41 @@ export const Hero = () => {
              style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}>
             Experience the difference with our trusted residential and commercial cleaning solutions
           </p>
+
+          {/* Achievements Section */}
+          <div className="flex flex-wrap justify-center gap-4 mb-8 animate-fade-up opacity-0"
+               style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}>
+            {/* 5-Star Rating */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2 flex items-center gap-2">
+              <div className="flex">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                ))}
+              </div>
+              <span className="text-white font-semibold">5.0 Rating</span>
+            </div>
+            
+            {/* HomeAdvisor Badge */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2 flex items-center gap-2">
+              <img 
+                src="/lovable-uploads/1fb1337a-4345-4d8a-8255-5828df8c2d70.png" 
+                alt="HomeAdvisor Screened & Approved" 
+                className="h-6"
+              />
+              <span className="text-white font-semibold">Screened & Approved</span>
+            </div>
+
+            {/* Years in Business */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
+              <span className="text-white font-semibold">4+ Years of Excellence</span>
+            </div>
+
+            {/* Customer Satisfaction */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
+              <span className="text-white font-semibold">100% Customer Satisfaction</span>
+            </div>
+          </div>
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-up opacity-0"
                style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}>
             <Button 
