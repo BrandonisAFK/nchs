@@ -95,7 +95,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
   }
 }
 
@@ -105,5 +105,18 @@
   }
   100% {
     background-position: 100% 100%;
+  }
+}
+
+.animate-background-shine {
+  animation: background-shine 8s linear infinite;
+}
+
+@keyframes background-shine {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -400%;
   }
 }

@@ -75,6 +75,9 @@ export default {
         "fade-in": "fade-in 0.3s ease-out",
         "background-shine": "background-shine 2s linear infinite",
       },
+      backdropBlur: {
+        xs: '2px',
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
