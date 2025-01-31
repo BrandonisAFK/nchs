@@ -6,7 +6,7 @@ export const Hero = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+    <div className="relative min-h-[90vh] flex items-center justify-center overflow-hidden -mt-[1px]">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
