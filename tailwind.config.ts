@@ -33,9 +33,9 @@ export default {
           dark: "#16A34A",
         },
         neutral: {
-          DEFAULT: "#94A3B8",
-          light: "#CBD5E1",
-          dark: "#475569",
+          DEFAULT: "#555555", // Updated from #94A3B8 to a darker gray
+          light: "#888888", // Updated from #CBD5E1 to a darker gray
+          dark: "#333333", // Updated from #475569 to a darker gray
         },
         clean: {
           green: "#F0FDF4",
