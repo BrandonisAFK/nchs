@@ -5,7 +5,7 @@ const reasons = [
   "Eco-friendly cleaning products",
   "Flexible scheduling options",
   "100% satisfaction guaranteed",
-  "Fully insured and bonded",
+  "Fully licensed and insured",
   "Competitive pricing",
 ];
 

@@ -10,20 +10,10 @@ export const Contact = () => {
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [webhookUrl, setWebhookUrl] = useState("");
   const { toast } = useToast();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
-    if (!webhookUrl) {
-      toast({
-        title: "Error",
-        description: "Please set up your Zapier webhook URL first",
-        variant: "destructive",
-      });
-      return;
-    }
 
     if (!name || !phone) {
       toast({
@@ -37,20 +27,8 @@ export const Contact = () => {
     setIsLoading(true);
 
     try {
-      const response = await fetch(webhookUrl, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        mode: "no-cors",
-        body: JSON.stringify({
-          name,
-          phone,
-          message,
-          timestamp: new Date().toISOString(),
-          source: window.location.href,
-        }),
-      });
+      // You can replace this with your actual API endpoint
+      await new Promise(resolve => setTimeout(resolve, 1000)); // Simulating API call
 
       toast({
         title: "Success",
@@ -119,14 +97,6 @@ export const Contact = () => {
               className="h-32"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-            />
-            <Input
-              placeholder="Zapier Webhook URL"
-              value={webhookUrl}
-              onChange={(e) => setWebhookUrl(e.target.value)}
-              required
-              type="url"
-              className="text-sm"
             />
             <Button
               type="submit"
