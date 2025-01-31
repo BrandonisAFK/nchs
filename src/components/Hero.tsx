@@ -6,8 +6,19 @@ export const Hero = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-slate-900 to-slate-800">
-      {/* Animated background */}
+    <div className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url('https://images.unsplash.com/photo-1527576539890-dfa815648363?auto=format&fit=crop&q=80')`
+        }}
+      />
+      
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-900/90 to-slate-900/80" />
+      
+      {/* Animated pattern overlay */}
       <div className="absolute inset-0">
         <div 
           className="absolute inset-0 opacity-30"
@@ -16,7 +27,6 @@ export const Hero = () => {
             animation: 'moveBackground 30s linear infinite',
           }} 
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent" />
       </div>
       
       {/* Content */}
@@ -88,7 +98,7 @@ export const Hero = () => {
         </div>
       </div>
       
-      {/* Decorative elements */}
+      {/* Bottom gradient */}
       <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-slate-900 to-transparent" />
     </div>
   );
