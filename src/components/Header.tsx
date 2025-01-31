@@ -1,4 +1,4 @@
-import { Sparkles } from "lucide-react";
+import { Sparkles, Phone } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 export const Header = () => {
@@ -16,6 +16,23 @@ export const Header = () => {
             New Covenant Home Services
           </div>
           <div className="absolute inset-0 bg-white/20 blur-lg opacity-0 group-hover:opacity-20 transition-opacity duration-500" />
+        </div>
+
+        {/* Contact Info */}
+        <div className="hidden md:flex items-center gap-6">
+          <a 
+            href="tel:615-390-3994"
+            className="flex items-center gap-2 text-white/90 hover:text-primary transition-colors group"
+          >
+            <Phone className="w-5 h-5 text-primary group-hover:animate-bounce" />
+            <span className="font-medium">615-390-3994</span>
+          </a>
+          <button
+            onClick={() => navigate('/booking')}
+            className="bg-primary hover:bg-primary-dark text-white px-6 py-2 rounded-full font-medium transition-all hover:scale-105 active:scale-95"
+          >
+            Book Now
+          </button>
         </div>
       </div>
     </header>
