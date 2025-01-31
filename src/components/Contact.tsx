@@ -65,7 +65,9 @@ export const Contact = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-lg">Phone</h3>
-                <p className="text-neutral">Call us to schedule a cleaning</p>
+                <a href="tel:615-390-3994" className="text-neutral hover:text-primary transition-colors">
+                  615-390-3994
+                </a>
               </div>
             </div>
             <div className="flex items-center space-x-4">
