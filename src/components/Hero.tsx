@@ -60,7 +60,7 @@ export const Hero = () => {
                 alt="HomeAdvisor Screened & Approved" 
                 className="h-6"
               />
-              <span className="text-white font-semibold">Screened & Approved</span>
+              <span className="text-white font-semibold">Angi Screened & Approved</span>
             </div>
 
             {/* Years in Business */}
