@@ -1,3 +1,4 @@
+
 import { Sparkles, Phone } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
@@ -27,12 +28,6 @@ export const Header = () => {
             <Phone className="w-5 h-5 text-primary group-hover:animate-bounce" />
             <span className="font-medium">615-390-3994</span>
           </a>
-          <button
-            onClick={() => navigate('/booking')}
-            className="bg-primary hover:bg-primary-dark text-white px-6 py-2 rounded-full font-medium transition-all hover:scale-105 active:scale-95"
-          >
-            Book Now
-          </button>
         </div>
       </div>
     </header>

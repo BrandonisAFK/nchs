@@ -1,3 +1,4 @@
+
 import { ArrowRight, Phone, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
@@ -60,13 +61,6 @@ export const Hero = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-up opacity-0"
                style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}>
-            <Button 
-              onClick={() => navigate('/booking')}
-              className="bg-primary hover:bg-primary-dark text-white px-8 py-6 text-lg group w-full sm:w-auto"
-            >
-              Book Now
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
             <Button 
               onClick={() => navigate('/services')}
               variant="outline"
