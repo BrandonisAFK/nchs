@@ -25,9 +25,15 @@ export const Hero = () => {
           <h1 className="text-4xl md:text-6xl font-bold text-white animate-fade-up mb-6 leading-tight">
             Professional Cleaning Services for Your Home
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-up opacity-0" 
+          <p className="text-xl md:text-2xl text-gray-300 mb-2 animate-fade-up opacity-0" 
              style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}>
             Experience the difference with our trusted residential and commercial cleaning solutions
+          </p>
+          
+          {/* Added Location Text */}
+          <p className="text-lg text-primary mb-8 animate-fade-up opacity-0 font-medium"
+             style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}>
+            Proudly Serving the Greater Pensacola Area
           </p>
 
           {/* Achievements Section */}
