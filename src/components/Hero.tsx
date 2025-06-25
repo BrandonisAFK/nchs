@@ -23,11 +23,11 @@ export const Hero = () => {
       <div className="container mx-auto px-4 py-16 text-center relative">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold text-white animate-fade-up mb-6 leading-tight">
-            Professional Cleaning Services for Your Home
+            Professional Cleaning and Painting Services for Your Home
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-2 animate-fade-up opacity-0" 
              style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}>
-            Experience the difference with our trusted residential and commercial cleaning solutions
+            Experience the difference with our trusted residential and commercial painting and cleaning solutions
           </p>
           
           {/* Added Location Text */}
