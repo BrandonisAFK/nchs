@@ -1,4 +1,5 @@
-import { Brush, Home, Building2, Star, Sparkles } from "lucide-react";
+
+import { Brush, Home, Building2, Hammer, Trees, Key } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const services = [
@@ -8,29 +9,29 @@ const services = [
     description: "Comprehensive home cleaning services tailored to your needs. We handle everything from regular maintenance to deep cleaning, including kitchens, bathrooms, bedrooms, and living areas. Our professional team uses eco-friendly products and follows a detailed checklist to ensure nothing is missed.",
   },
   {
+    icon: Brush,
+    title: "Interior & Exterior Painting",
+    description: "Transform your property with our professional painting services. From single rooms to entire homes and commercial buildings, we provide high-quality interior and exterior painting with attention to detail, proper surface preparation, and premium paints for lasting results.",
+  },
+  {
+    icon: Trees,
+    title: "Landscaping & Yard Care",
+    description: "Complete landscaping services to enhance your property's curb appeal. Including lawn maintenance, garden design, tree trimming, mulching, seasonal cleanup, and ongoing yard care to keep your outdoor spaces beautiful year-round.",
+  },
+  {
+    icon: Hammer,
+    title: "Handyman Services",
+    description: "Professional handyman services for all your home repair and improvement needs. From minor repairs and installations to fixture replacements, drywall work, and general maintenance tasks. No job too small for our skilled craftsmen.",
+  },
+  {
+    icon: Key,
+    title: "Airbnb & Rental Maintenance",
+    description: "Specialized maintenance services for rental properties and Airbnb hosts. Including turnover cleaning, property inspections, routine maintenance, emergency repairs, and ensuring your rental property stays guest-ready and well-maintained.",
+  },
+  {
     icon: Building2,
-    title: "Commercial Cleaning",
-    description: "Professional cleaning solutions for offices and businesses. We maintain a clean, healthy work environment with services including floor care, window cleaning, restroom sanitation, and workspace disinfection. Available after hours to minimize disruption to your business.",
-  },
-  {
-    icon: Brush,
-    title: "Deep Cleaning",
-    description: "Thorough deep cleaning for those special occasions or seasonal needs. Includes detailed cleaning of all surfaces, baseboards, window sills, light fixtures, and hard-to-reach areas. Perfect for spring cleaning or preparing your home for special events.",
-  },
-  {
-    icon: Star,
-    title: "Move In/Out Cleaning",
-    description: "Get your new space ready or leave your old one spotless. We ensure every surface is thoroughly cleaned, including inside cabinets, appliances, and windows. Our service helps you get your security deposit back or prepare your new home for moving in.",
-  },
-  {
-    icon: Sparkles,
-    title: "Specialized Services",
-    description: "Custom cleaning solutions for specific needs including post-construction cleanup, event preparation and cleanup, or specialized floor and carpet treatments. We work with you to develop a cleaning plan that meets your unique requirements.",
-  },
-  {
-    icon: Brush,
-    title: "Recurring Service Plans",
-    description: "Regular cleaning schedules tailored to your needs - weekly, bi-weekly, or monthly. Enjoy consistent, reliable service with the same trusted cleaning team. Save money with our recurring service packages while maintaining a consistently clean space.",
+    title: "Commercial Property Services",
+    description: "Comprehensive maintenance solutions for commercial properties including office buildings, retail spaces, and multi-unit properties. Regular cleaning, painting, landscaping, and general maintenance to keep your business property professional and inviting.",
   }
 ];
 
