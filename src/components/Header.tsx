@@ -1,32 +1,54 @@
 
-import { Sparkles, Phone } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { Logo } from "@/components/ui/logo";
 
 export const Header = () => {
   const navigate = useNavigate();
   
   return (
-    <header className="w-full top-0 z-50 bg-slate-900">
-      <div className="container mx-auto px-4 py-6 flex items-center justify-between">
+    <header className="w-full top-0 z-50 bg-white border-b border-neutral-light/20 shadow-card">
+      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+        {/* Logo and Company Name */}
         <div 
           onClick={() => navigate('/')}
-          className="flex items-center gap-2 relative group cursor-pointer"
+          className="flex items-center gap-4 cursor-pointer group"
         >
-          <Sparkles className="w-8 h-8 text-[#22C55E] animate-pulse" />
-          <div className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#22C55E] via-[#4ADE80] to-[#22C55E] animate-background-shine bg-[length:400%_100%]">
-            New Covenant Home Services
+          <Logo className="transition-transform group-hover:scale-105" />
+          <div className="flex flex-col">
+            <h1 className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors">
+              New Covenant Home Services
+            </h1>
+            <p className="text-sm text-muted-foreground font-medium">
+              Professional Property Maintenance
+            </p>
           </div>
-          <div className="absolute inset-0 bg-white/20 blur-lg opacity-0 group-hover:opacity-20 transition-opacity duration-500" />
         </div>
 
-        {/* Contact Info */}
-        <div className="hidden md:flex items-center gap-6">
+        {/* Contact Information */}
+        <div className="hidden lg:flex items-center gap-8">
+          <div className="flex items-center gap-2 text-muted-foreground">
+            <MapPin className="w-4 h-4 text-primary" />
+            <span className="text-sm font-medium">Greater Pensacola Area</span>
+          </div>
+          
           <a 
             href="tel:615-390-3994"
-            className="flex items-center gap-2 text-white/90 hover:text-primary transition-colors group"
+            className="flex items-center gap-3 bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-xl transition-colors shadow-card font-semibold"
           >
-            <Phone className="w-5 h-5 text-primary group-hover:animate-bounce" />
-            <span className="font-medium">615-390-3994</span>
+            <Phone className="w-5 h-5" />
+            <span>615-390-3994</span>
+          </a>
+        </div>
+
+        {/* Mobile Contact */}
+        <div className="lg:hidden">
+          <a 
+            href="tel:615-390-3994"
+            className="flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-lg transition-colors shadow-card font-semibold"
+          >
+            <Phone className="w-4 h-4" />
+            <span className="text-sm">Call</span>
           </a>
         </div>
       </div>
