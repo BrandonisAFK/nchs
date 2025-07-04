@@ -56,60 +56,57 @@ export const Services = () => {
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
-        {/* Epic section header */}
-        <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm border border-primary/20 rounded-full px-6 py-3 mb-6">
-            <Zap className="w-5 h-5 text-primary" />
-            <span className="text-primary font-semibold">Our Services</span>
+        {/* Professional section header */}
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 bg-primary/10 rounded-full px-5 py-2 mb-6">
+            <Zap className="w-4 h-4 text-primary" />
+            <span className="text-primary font-medium">Our Services</span>
           </div>
           
-          <h2 className="text-4xl md:text-6xl font-black text-foreground mb-6 bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Complete Property Solutions
           </h2>
           
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             From spotless cleaning to stunning transformations, we deliver exceptional results across all property maintenance services
           </p>
         </div>
 
-        {/* Epic services grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Professional services grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <Card 
               key={index} 
-              className="group hover-card transition-epic bg-gradient-card border-0 shadow-card hover:shadow-epic relative overflow-hidden animate-hero-text"
+              className="group transition-all duration-300 bg-white border border-neutral-light/20 shadow-card hover:shadow-lg hover:border-primary/20 relative overflow-hidden animate-hero-text"
               style={{ animationDelay: service.delay, animationFillMode: "forwards", opacity: 0 }}
             >
-              {/* Gradient overlay on hover */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-10 transition-epic`}></div>
-              
               <CardHeader className="relative z-10">
-                <div className={`w-16 h-16 bg-gradient-to-br ${service.gradient} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-bounce shadow-glow group-hover:shadow-epic`}>
-                  <service.icon className="w-8 h-8 text-white drop-shadow-sm" />
+                <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <service.icon className="w-7 h-7 text-primary" />
                 </div>
-                <CardTitle className="text-2xl mb-3 font-bold text-foreground group-hover:text-primary transition-colors">
+                <CardTitle className="text-xl mb-3 font-semibold text-foreground">
                   {service.title}
                 </CardTitle>
               </CardHeader>
               
               <CardContent className="relative z-10">
-                <p className="text-muted-foreground leading-relaxed group-hover:text-foreground/80 transition-colors">
+                <p className="text-muted-foreground leading-relaxed">
                   {service.description}
                 </p>
               </CardContent>
               
-              {/* Hover effect accent */}
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary to-transparent scale-x-0 group-hover:scale-x-100 transition-epic"></div>
+              {/* Clean accent line */}
+              <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
             </Card>
           ))}
         </div>
         
-        {/* Epic CTA section */}
-        <div className="text-center mt-20 animate-hero-text" style={{ animationDelay: "0.8s", animationFillMode: "forwards", opacity: 0 }}>
-          <div className="bg-gradient-card backdrop-blur-sm rounded-3xl p-8 shadow-epic border border-white/20 max-w-2xl mx-auto">
-            <h3 className="text-3xl font-bold text-foreground mb-4">Ready to Transform Your Property?</h3>
-            <p className="text-muted-foreground mb-6 text-lg">Get a personalized quote for any combination of our services</p>
-            <button className="bg-gradient-primary hover:shadow-glow px-8 py-4 text-lg font-bold rounded-2xl transition-bounce hover:scale-105 shadow-card text-primary-foreground">
+        {/* Professional CTA section */}
+        <div className="text-center mt-16 animate-hero-text" style={{ animationDelay: "0.8s", animationFillMode: "forwards", opacity: 0 }}>
+          <div className="bg-white rounded-2xl p-8 shadow-card border border-neutral-light/20 max-w-xl mx-auto">
+            <h3 className="text-2xl font-semibold text-foreground mb-3">Ready to Transform Your Property?</h3>
+            <p className="text-muted-foreground mb-6">Get a personalized quote for any combination of our services</p>
+            <button className="bg-primary hover:bg-primary/90 px-6 py-3 font-semibold rounded-xl transition-colors shadow-card text-primary-foreground">
               Get Free Estimate
             </button>
           </div>
