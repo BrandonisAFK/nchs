@@ -28,18 +28,35 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#22C55E",
-          light: "#4ADE80",
-          dark: "#16A34A",
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
+          glow: "hsl(var(--primary-glow))",
+        },
+        secondary: {
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
+        },
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
         },
         neutral: {
-          DEFAULT: "#555555", // Updated from #94A3B8 to a darker gray
-          light: "#888888", // Updated from #CBD5E1 to a darker gray
-          dark: "#333333", // Updated from #475569 to a darker gray
+          DEFAULT: "hsl(220 13% 69%)",
+          light: "hsl(220 14% 83%)",
+          dark: "hsl(220 38% 5%)",
         },
-        clean: {
-          green: "#F0FDF4",
-          blue: "#D3E4FD",
+        epic: {
+          blue: "hsl(221 83% 53%)",
+          purple: "hsl(262 83% 58%)",
+          orange: "hsl(25 95% 53%)",
         },
       },
       keyframes: {
