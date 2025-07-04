@@ -2,7 +2,7 @@ import { CheckCircle2 } from "lucide-react";
 
 const reasons = [
   "Professional and experienced staff",
-  "Eco-friendly cleaning products",
+  "Quality materials and tools",
   "Flexible scheduling options",
   "100% satisfaction guaranteed",
   "Fully licensed and insured",

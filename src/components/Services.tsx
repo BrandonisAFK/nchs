@@ -101,16 +101,6 @@ export const Services = () => {
           ))}
         </div>
         
-        {/* Professional CTA section */}
-        <div className="text-center mt-16 animate-hero-text" style={{ animationDelay: "0.8s", animationFillMode: "forwards", opacity: 0 }}>
-          <div className="bg-white rounded-2xl p-8 shadow-card border border-neutral-light/20 max-w-xl mx-auto">
-            <h3 className="text-2xl font-semibold text-foreground mb-3">Ready to Transform Your Property?</h3>
-            <p className="text-muted-foreground mb-6">Get a personalized quote for any combination of our services</p>
-            <button className="bg-primary hover:bg-primary/90 px-6 py-3 font-semibold rounded-xl transition-colors shadow-card text-primary-foreground">
-              Get Free Estimate
-            </button>
-          </div>
-        </div>
       </div>
     </section>
   );
