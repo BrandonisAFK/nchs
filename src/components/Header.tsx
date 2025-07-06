@@ -1,5 +1,5 @@
 
-import { Sparkles, Phone } from "lucide-react";
+import { ArrowRight, Phone, Star, Home, Zap } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 export const Header = () => {
@@ -13,7 +13,7 @@ export const Header = () => {
           className="flex items-center gap-3 relative group cursor-pointer"
         >
           <div className="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center backdrop-blur-sm border border-primary/30 group-hover:bg-primary/30 transition-all duration-300">
-            <Sparkles className="w-6 h-6 text-primary group-hover:scale-110 transition-transform duration-300" />
+            <Home className="w-6 h-6 text-primary group-hover:scale-110 transition-transform duration-300" />
           </div>
           <div className="flex flex-col">
             <div className="text-xl font-bold text-white tracking-tight">

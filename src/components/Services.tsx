@@ -26,7 +26,7 @@ const services = [
   {
     icon: Wrench,
     title: "Handyman Services",
-    description: "Reliable handyman services for all your repair and maintenance needs. From minor fixes to major improvements, our skilled professionals handle electrical, plumbing, carpentry, and general maintenance with expertise.",
+    description: "General handyman services for small repairs and maintenance tasks. From fixing fixtures and painting touch-ups to furniture assembly and minor carpentry work. We handle the everyday repairs that keep your property in great condition.",
     gradient: "from-primary to-epic-slate",
     delay: "0.4s"
   },
