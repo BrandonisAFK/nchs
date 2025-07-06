@@ -29,7 +29,7 @@ export const Hero = () => {
           
           <p className="text-xl md:text-2xl text-neutral-light mb-4 animate-hero-text max-w-4xl mx-auto" 
              style={{ animationDelay: "0.3s", animationFillMode: "forwards", opacity: 0 }}>
-            From spotless cleaning to flawless painting, landscaping to handyman services - we're your one-stop solution for all property maintenance needs
+            Your trusted partner for comprehensive property care with reliable, professional service you can count on
           </p>
           
           {/* Location Text */}
@@ -67,8 +67,8 @@ export const Hero = () => {
             </div>
           </div>
 
-          {/* Professional CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-hero-text"
+          {/* Professional CTA Button */}
+          <div className="flex justify-center items-center mb-12 animate-hero-text"
                style={{ animationDelay: "0.6s", animationFillMode: "forwards", opacity: 0 }}>
             <Button 
               onClick={() => navigate('/services')}
@@ -76,14 +76,6 @@ export const Hero = () => {
             >
               <Sparkles className="w-5 h-5 mr-2" />
               Our Services
-            </Button>
-            
-            <Button 
-              variant="outline"
-              className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-4 text-lg font-semibold rounded-xl backdrop-blur-sm transition-colors"
-            >
-              <Phone className="w-5 h-5 mr-2" />
-              Get Quote
             </Button>
           </div>
 
