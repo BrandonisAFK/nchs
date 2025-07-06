@@ -19,7 +19,7 @@ const services = [
   {
     icon: TreePine,
     title: "Landscaping & Yard Care",
-    description: "Complete landscaping solutions to enhance your property's curb appeal. From lawn maintenance and garden design to seasonal cleanup and plant care. We create and maintain beautiful outdoor spaces year-round.",
+    description: "Basic landscaping and yard maintenance services to keep your property looking neat and well-maintained. From lawn care and trimming to seasonal cleanup and simple garden maintenance tasks.",
     gradient: "from-primary-glow to-primary",
     delay: "0.3s"
   },
