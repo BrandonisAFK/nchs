@@ -6,35 +6,35 @@ const services = [
     icon: Sparkles,
     title: "Professional Cleaning",
     description: "Comprehensive residential and commercial cleaning services. From regular maintenance to deep cleaning, we handle every detail with precision. Our team uses premium products and follows detailed checklists to ensure spotless results every time.",
-    gradient: "from-epic-blue to-primary",
+    gradient: "from-primary to-primary-glow",
     delay: "0.1s"
   },
   {
     icon: Paintbrush2,
     title: "Interior & Exterior Painting",
     description: "Transform your property with our professional painting services. We provide complete interior and exterior painting solutions using premium paints and expert techniques. From color consultation to flawless finishing touches.",
-    gradient: "from-epic-purple to-epic-orange",
+    gradient: "from-epic-slate to-primary",
     delay: "0.2s"
   },
   {
     icon: TreePine,
     title: "Landscaping & Yard Care",
     description: "Complete landscaping solutions to enhance your property's curb appeal. From lawn maintenance and garden design to seasonal cleanup and plant care. We create and maintain beautiful outdoor spaces year-round.",
-    gradient: "from-primary to-primary-glow",
+    gradient: "from-primary-glow to-primary",
     delay: "0.3s"
   },
   {
     icon: Wrench,
     title: "Handyman Services",
     description: "Reliable handyman services for all your repair and maintenance needs. From minor fixes to major improvements, our skilled professionals handle electrical, plumbing, carpentry, and general maintenance with expertise.",
-    gradient: "from-epic-orange to-epic-blue",
+    gradient: "from-primary to-epic-slate",
     delay: "0.4s"
   },
   {
     icon: Crown,
     title: "Airbnb & Rental Maintenance",
     description: "Specialized property management services for rental properties and Airbnb hosts. Complete turnover cleaning, maintenance checks, guest preparations, and ongoing property care to maximize your rental success.",
-    gradient: "from-epic-blue to-epic-purple",
+    gradient: "from-epic-slate to-primary-glow",
     delay: "0.5s"
   },
   {
@@ -52,7 +52,7 @@ export const Services = () => {
       {/* Background decorations */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/4 w-72 h-72 bg-primary/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-epic-purple/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary-glow/5 rounded-full blur-3xl"></div>
       </div>
       
       <div className="container mx-auto px-4 relative z-10">

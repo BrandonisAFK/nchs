@@ -54,9 +54,9 @@ export default {
           dark: "hsl(220 38% 5%)",
         },
         epic: {
-          blue: "hsl(221 83% 53%)",
-          purple: "hsl(262 83% 58%)",
-          orange: "hsl(25 95% 53%)",
+          teal: "hsl(180 84% 37%)",
+          slate: "hsl(220 38% 5%)",
+          dark: "hsl(0 0% 0%)",
         },
       },
       keyframes: {

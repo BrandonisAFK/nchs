@@ -6,14 +6,14 @@ export const Header = () => {
   const navigate = useNavigate();
   
   return (
-    <header className="w-full top-0 z-50 bg-slate-900">
+    <header className="w-full top-0 z-50 bg-epic-dark">
       <div className="container mx-auto px-4 py-6 flex items-center justify-between">
         <div 
           onClick={() => navigate('/')}
           className="flex items-center gap-2 relative group cursor-pointer"
         >
-          <Sparkles className="w-8 h-8 text-[#22C55E] animate-pulse" />
-          <div className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#22C55E] via-[#4ADE80] to-[#22C55E] animate-background-shine bg-[length:400%_100%]">
+          <Sparkles className="w-8 h-8 text-primary animate-pulse" />
+          <div className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary via-primary-glow to-primary animate-background-shine bg-[length:400%_100%]">
             New Covenant Home Services
           </div>
           <div className="absolute inset-0 bg-white/20 blur-lg opacity-0 group-hover:opacity-20 transition-opacity duration-500" />
