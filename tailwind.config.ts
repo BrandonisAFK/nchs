@@ -57,6 +57,7 @@ export default {
           teal: "hsl(180 84% 37%)",
           slate: "hsl(220 38% 5%)",
           dark: "hsl(0 0% 0%)",
+          gold: "hsl(45 100% 51%)",
         },
       },
       keyframes: {

@@ -45,7 +45,7 @@ export const Hero = () => {
             <div className="bg-white/95 backdrop-blur-sm rounded-xl px-5 py-3 flex items-center gap-3 shadow-card transition-epic border border-white/40">
               <div className="flex">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-primary text-primary" />
+                  <Star key={i} className="w-5 h-5 fill-epic-gold text-epic-gold" />
                 ))}
               </div>
               <span className="text-neutral-dark font-semibold">5.0 Rating</span>
