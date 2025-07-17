@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://newcovenanths.com/sitemap.xml
+
+# Allow all location pages
+Allow: /locations/
+
+# Important pages
+Allow: /services
+Allow: /
+
+# Crawl delay
+Crawl-delay: 1
