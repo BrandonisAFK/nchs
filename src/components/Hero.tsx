@@ -7,7 +7,18 @@ export const Hero = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center bg-slate-900">
+    <div className="relative min-h-screen flex items-center justify-center bg-slate-900 overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+        style={{
+          backgroundImage: `url('https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=5760&q=80')`
+        }}
+      />
+      
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-slate-900/70" />
+      
       {/* Content */}
       <div className="container mx-auto px-4 py-20 text-center relative z-10">
         <div className="max-w-5xl mx-auto">
