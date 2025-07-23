@@ -72,7 +72,7 @@ export const Hero = () => {
             <div className="bg-white rounded-lg px-6 py-4 flex items-center gap-3 shadow-lg">
               <Award className="w-6 h-6 text-green-600" />
               <div className="text-left">
-                <p className="text-gray-800 font-bold">5+ Years Excellence</p>
+                <p className="text-gray-800 font-bold">5+ Years Serving Community</p>
               </div>
             </div>
           </div>
