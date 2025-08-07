@@ -1,11 +1,11 @@
-import { Brush, Home, Building2, Wrench, TreePine, Paintbrush2, Sparkles, Crown, Zap } from "lucide-react";
+import { Brush, Home, Building2, Wrench, TreePine, Paintbrush2, Truck, Crown, Zap } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const services = [
   {
-    icon: Sparkles,
-    title: "Professional Cleaning",
-    description: "Comprehensive residential and commercial cleaning services. From regular maintenance to deep cleaning, we handle every detail with precision. Our team uses premium products and follows detailed checklists to ensure spotless results every time.",
+    icon: Truck,
+    title: "Hauling, Demolition & Junk Removal",
+    description: "Complete hauling and demolition services for residential and commercial properties. From construction debris removal to estate cleanouts, we handle projects of all sizes. Safe, efficient demolition work and responsible junk disposal.",
     gradient: "from-primary to-primary-glow",
     delay: "0.1s"
   },
