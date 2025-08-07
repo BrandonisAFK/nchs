@@ -1,15 +1,34 @@
 # Netlify redirects for SEO optimization
 
-# Redirect common search patterns to landing pages
-/house-cleaning-pensacola /locations/house-cleaning-downtown-pensacola.html 301
-/maid-service-pensacola /locations/maid-service-downtown-pensacola.html 301
-/cleaning-gulf-breeze /locations/house-cleaning-gulf-breeze.html 301
+# Redirect common search patterns to landing pages  
 /painting-pensacola /locations/painting-downtown-pensacola.html 301
 /property-maintenance-pensacola /locations/property-maintenance-downtown-pensacola.html 301
+/maintenance-gulf-breeze /locations/property-maintenance-gulf-breeze.html 301
+/painting-gulf-breeze /locations/painting-gulf-breeze.html 301
+/handyman-cantonment /locations/property-maintenance-cantonment.html 301
+/painting-cantonment /locations/painting-cantonment.html 301
 
-# Redirect old URLs if any
-/services/cleaning /locations/house-cleaning-downtown-pensacola.html 301
-/services/maid /locations/maid-service-downtown-pensacola.html 301
+# Redirect old service URLs
+/services/property-maintenance /locations/property-maintenance-downtown-pensacola.html 301
+/services/painting /locations/painting-downtown-pensacola.html 301
+
+# Redirect old cleaning URLs to homepage (since we don't offer cleaning anymore)
+/house-cleaning-* / 301
+/maid-service-* / 301
+/cleaning-* / 301
+/services/cleaning / 301
+/services/maid / 301
+
+# Contact redirects
+/contact / 301
+/quote / 301
+/estimate / 301
+
+# Service area redirects
+/pensacola / 301
+/gulf-breeze / 301
+/cantonment / 301
+/milton / 301
 
 # Catch-all for location searches
 /locations/* /locations/:splat 200
