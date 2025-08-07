@@ -95,7 +95,7 @@ export const Contact = () => {
               type="tel"
             />
             <Textarea
-              placeholder="Tell us about your cleaning needs"
+              placeholder="Tell us about your project needs"
               className="h-32"
               value={message}
               onChange={(e) => setMessage(e.target.value)}

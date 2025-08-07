@@ -33,14 +33,14 @@ const services = [
   {
     icon: Crown,
     title: "Airbnb & Rental Maintenance",
-    description: "Specialized property management services for rental properties and Airbnb hosts. Complete turnover cleaning, maintenance checks, guest preparations, and ongoing property care to maximize your rental success.",
+    description: "Specialized property management services for rental properties and Airbnb hosts. Complete turnover services, maintenance checks, guest preparations, and ongoing property care to maximize your rental success.",
     gradient: "from-epic-slate to-primary-glow",
     delay: "0.5s"
   },
   {
     icon: Building2,
     title: "Complete Property Management",
-    description: "Full-service property maintenance solutions combining all our services. Perfect for busy property owners, landlords, and businesses who want comprehensive care. One call handles everything from cleaning to repairs.",
+    description: "Full-service property maintenance solutions combining all our services. Perfect for busy property owners, landlords, and businesses who want comprehensive care. One call handles everything from repairs to renovations.",
     gradient: "from-primary-glow to-primary",
     delay: "0.6s"
   }
@@ -68,7 +68,7 @@ export const Services = () => {
           </h2>
           
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            From spotless cleaning to stunning transformations, we deliver exceptional results across all property maintenance services
+            From stunning transformations to reliable maintenance, we deliver exceptional results across all property services
           </p>
         </div>
 
