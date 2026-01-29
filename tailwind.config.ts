@@ -19,7 +19,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['DM Sans', 'sans-serif'],
+        display: ['Outfit', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -30,7 +31,6 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
-          glow: "hsl(var(--primary-glow))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -44,54 +44,89 @@ export default {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
         },
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
+        },
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        neutral: {
-          DEFAULT: "hsl(220 13% 69%)",
-          light: "hsl(220 14% 83%)",
-          dark: "hsl(220 38% 5%)",
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
         },
-        epic: {
-          teal: "hsl(180 84% 37%)",
-          slate: "hsl(220 38% 5%)",
-          dark: "hsl(0 0% 0%)",
-          gold: "hsl(45 100% 51%)",
+        sidebar: {
+          DEFAULT: "hsl(var(--sidebar-background))",
+          foreground: "hsl(var(--sidebar-foreground))",
+          primary: "hsl(var(--sidebar-primary))",
+          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
+          accent: "hsl(var(--sidebar-accent))",
+          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
+          border: "hsl(var(--sidebar-border))",
+          ring: "hsl(var(--sidebar-ring))",
+        },
+        // Brand colors
+        navy: {
+          50: "hsl(210 40% 96%)",
+          100: "hsl(210 35% 91%)",
+          200: "hsl(214 32% 83%)",
+          300: "hsl(213 27% 70%)",
+          400: "hsl(215 20% 55%)",
+          500: "hsl(217 19% 45%)",
+          600: "hsl(220 26% 35%)",
+          700: "hsl(222 37% 28%)",
+          800: "hsl(222 47% 20%)",
+          900: "hsl(222 47% 15%)",
+          950: "hsl(222 47% 11%)",
+        },
+        gold: {
+          50: "hsl(48 100% 96%)",
+          100: "hsl(48 96% 89%)",
+          200: "hsl(48 97% 77%)",
+          300: "hsl(46 97% 65%)",
+          400: "hsl(43 96% 56%)",
+          500: "hsl(38 92% 50%)",
+          600: "hsl(32 95% 44%)",
+          700: "hsl(26 90% 37%)",
+          800: "hsl(23 83% 31%)",
+          900: "hsl(22 78% 26%)",
+          950: "hsl(21 92% 14%)",
         },
       },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
       keyframes: {
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
         "fade-up": {
-          "0%": {
-            opacity: "0",
-            transform: "translateY(20px)",
-          },
-          "100%": {
-            opacity: "1",
-            transform: "translateY(0)",
-          },
+          "0%": { opacity: "0", transform: "translateY(24px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
         },
         "fade-in": {
-          "0%": {
-            opacity: "0",
-          },
-          "100%": {
-            opacity: "1",
-          },
-        },
-        "background-shine": {
-          "0%": {
-            backgroundPosition: "0% 50%",
-          },
-          "100%": {
-            backgroundPosition: "100% 50%",
-          },
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
         },
       },
       animation: {
-        "fade-up": "fade-up 0.5s ease-out",
-        "fade-in": "fade-in 0.3s ease-out",
-        "background-shine": "background-shine 2s linear infinite",
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-up": "fade-up 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards",
+        "fade-in": "fade-in 0.5s ease-out forwards",
+      },
+      boxShadow: {
+        'professional': '0 10px 15px -3px hsl(222 47% 11% / 0.08), 0 4px 6px -4px hsl(222 47% 11% / 0.05)',
+        'card': '0 4px 6px -1px hsl(222 47% 11% / 0.08), 0 2px 4px -2px hsl(222 47% 11% / 0.05)',
+        'gold': '0 4px 14px 0 hsl(38 92% 50% / 0.25)',
       },
     },
   },

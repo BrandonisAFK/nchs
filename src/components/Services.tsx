@@ -1,106 +1,136 @@
-import { Brush, Home, Building2, Wrench, TreePine, Paintbrush2, Truck, Crown, Zap } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Truck, Paintbrush2, TreePine, Wrench, Crown, Building2, ArrowRight } from "lucide-react";
 
 const services = [
   {
     icon: Truck,
-    title: "Hauling, Demolition & Junk Removal",
-    description: "Complete hauling and demolition services for residential and commercial properties. From construction debris removal to estate cleanouts, we handle projects of all sizes. Safe, efficient demolition work and responsible junk disposal.",
-    gradient: "from-primary to-primary-glow",
-    delay: "0.1s"
+    title: "Hauling & Demolition",
+    description: "Complete hauling, demolition, and junk removal services. From debris removal to estate cleanouts, we handle projects of all sizes safely and efficiently.",
+    featured: true,
   },
   {
     icon: Paintbrush2,
-    title: "Interior & Exterior Painting",
-    description: "Transform your property with our professional painting services. We provide complete interior and exterior painting solutions using premium paints and expert techniques. From color consultation to flawless finishing touches.",
-    gradient: "from-epic-slate to-primary",
-    delay: "0.2s"
+    title: "Professional Painting",
+    description: "Transform your property with expert interior and exterior painting. Premium paints, flawless techniques, and stunning results.",
+    featured: true,
   },
   {
     icon: TreePine,
     title: "Landscaping & Yard Care",
-    description: "Basic landscaping and yard maintenance services to keep your property looking neat and well-maintained. From lawn care and trimming to seasonal cleanup and simple garden maintenance tasks.",
-    gradient: "from-primary-glow to-primary",
-    delay: "0.3s"
+    description: "Keep your property looking pristine with lawn care, trimming, seasonal cleanup, and garden maintenance.",
+    featured: false,
   },
   {
     icon: Wrench,
     title: "Handyman Services",
-    description: "General handyman services for small repairs and maintenance tasks. From fixing fixtures and painting touch-ups to furniture assembly and minor carpentry work. We handle the everyday repairs that keep your property in great condition.",
-    gradient: "from-primary to-epic-slate",
-    delay: "0.4s"
+    description: "From fixture repairs and furniture assembly to minor carpentry — we handle the everyday repairs that keep your property perfect.",
+    featured: false,
   },
   {
     icon: Crown,
-    title: "Airbnb & Rental Maintenance",
-    description: "Specialized property management services for rental properties and Airbnb hosts. Complete turnover services, maintenance checks, guest preparations, and ongoing property care to maximize your rental success.",
-    gradient: "from-epic-slate to-primary-glow",
-    delay: "0.5s"
+    title: "Airbnb & Rental Care",
+    description: "Turnover services, maintenance checks, and ongoing care to maximize your rental property success.",
+    featured: false,
   },
   {
     icon: Building2,
-    title: "Complete Property Management",
-    description: "Full-service property maintenance solutions combining all our services. Perfect for busy property owners, landlords, and businesses who want comprehensive care. One call handles everything from repairs to renovations.",
-    gradient: "from-primary-glow to-primary",
-    delay: "0.6s"
+    title: "Property Management",
+    description: "Full-service maintenance combining all our services. One call handles everything from repairs to renovations.",
+    featured: false,
   }
 ];
 
 export const Services = () => {
   return (
-    <section className="py-32 bg-gradient-to-b from-background via-neutral-light/5 to-background relative overflow-hidden" id="services">
-      {/* Background decorations */}
-      <div className="absolute inset-0">
-        <div className="absolute top-0 left-1/4 w-72 h-72 bg-primary/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary-glow/5 rounded-full blur-3xl"></div>
-      </div>
+    <section className="py-24 bg-gradient-section relative overflow-hidden" id="services">
+      {/* Subtle background decoration */}
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-navy-100/50 rounded-full blur-[150px] -translate-y-1/2 translate-x-1/2 pointer-events-none" />
       
       <div className="container mx-auto px-4 relative z-10">
-        {/* Professional section header */}
+        {/* Section header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-primary/10 rounded-full px-5 py-2 mb-6">
-            <Zap className="w-4 h-4 text-primary" />
-            <span className="text-primary font-medium">Our Services</span>
+          <div 
+            className="inline-flex items-center gap-2 bg-navy-100 rounded-full px-4 py-2 mb-6 opacity-0 animate-fade-up"
+            style={{ animationDelay: '0.1s' }}
+          >
+            <span className="w-2 h-2 bg-gold-500 rounded-full" />
+            <span className="text-navy-800 text-sm font-medium tracking-wide uppercase">Our Services</span>
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 
+            className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 opacity-0 animate-fade-up"
+            style={{ animationDelay: '0.2s' }}
+          >
             Complete Property Solutions
           </h2>
           
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            From stunning transformations to reliable maintenance, we deliver exceptional results across all property services
+          <p 
+            className="text-muted-foreground text-lg max-w-2xl mx-auto opacity-0 animate-fade-up"
+            style={{ animationDelay: '0.3s' }}
+          >
+            Professional services tailored to your property needs — from transformations to maintenance
           </p>
         </div>
 
-        {/* Professional services grid */}
+        {/* Services grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
-            <Card 
+            <div 
               key={index} 
-              className="group transition-all duration-300 bg-white border border-neutral-light/20 shadow-card hover:shadow-lg hover:border-primary/20 relative overflow-hidden animate-hero-text"
-              style={{ animationDelay: service.delay, animationFillMode: "forwards", opacity: 0 }}
+              className={`group relative bg-card rounded-xl border transition-all duration-300 hover:shadow-professional hover:-translate-y-1 opacity-0 animate-fade-up overflow-hidden ${
+                service.featured 
+                  ? 'border-gold-200 shadow-card' 
+                  : 'border-border hover:border-navy-200'
+              }`}
+              style={{ animationDelay: `${0.1 + index * 0.1}s` }}
             >
-              <CardHeader className="relative z-10">
-                <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                  <service.icon className="w-7 h-7 text-primary" />
+              {/* Featured badge */}
+              {service.featured && (
+                <div className="absolute top-4 right-4">
+                  <span className="inline-flex items-center bg-gradient-gold text-navy-950 text-xs font-semibold px-2.5 py-1 rounded-full">
+                    Popular
+                  </span>
                 </div>
-                <CardTitle className="text-xl mb-3 font-semibold text-foreground">
-                  {service.title}
-                </CardTitle>
-              </CardHeader>
+              )}
               
-              <CardContent className="relative z-10">
-                <p className="text-muted-foreground leading-relaxed">
+              <div className="p-6">
+                {/* Icon */}
+                <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-5 transition-colors ${
+                  service.featured 
+                    ? 'bg-gradient-gold' 
+                    : 'bg-navy-100 group-hover:bg-navy-800'
+                }`}>
+                  <service.icon className={`w-6 h-6 transition-colors ${
+                    service.featured 
+                      ? 'text-navy-950' 
+                      : 'text-navy-700 group-hover:text-white'
+                  }`} />
+                </div>
+                
+                {/* Content */}
+                <h3 className="font-display text-xl font-semibold text-foreground mb-3">
+                  {service.title}
+                </h3>
+                
+                <p className="text-muted-foreground leading-relaxed mb-4">
                   {service.description}
                 </p>
-              </CardContent>
+                
+                {/* Learn more link */}
+                <div className="flex items-center text-navy-800 font-medium text-sm group-hover:text-gold-600 transition-colors">
+                  <span>Learn more</span>
+                  <ArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
+                </div>
+              </div>
               
-              {/* Clean accent line */}
-              <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
-            </Card>
+              {/* Bottom accent line */}
+              <div className={`h-1 transition-all duration-300 ${
+                service.featured 
+                  ? 'bg-gradient-gold' 
+                  : 'bg-navy-200 group-hover:bg-navy-800'
+              }`} />
+            </div>
           ))}
         </div>
-        
       </div>
     </section>
   );

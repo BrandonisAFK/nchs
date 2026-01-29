@@ -1,39 +1,115 @@
-
-import { ArrowRight, Phone, Star, Home, Zap } from "lucide-react";
+import { Phone, Home, Menu, X } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 export const Header = () => {
   const navigate = useNavigate();
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   
   return (
-    <header className="w-full top-0 z-50 bg-gradient-to-r from-epic-dark via-epic-slate to-epic-dark border-b border-primary/20">
-      <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <div 
-          onClick={() => navigate('/')}
-          className="flex items-center gap-3 relative group cursor-pointer"
-        >
-          <div className="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center backdrop-blur-sm border border-primary/30 group-hover:bg-primary/30 transition-all duration-300">
-            <Home className="w-6 h-6 text-primary group-hover:scale-110 transition-transform duration-300" />
-          </div>
-          <div className="flex flex-col">
-            <div className="text-xl font-bold text-white tracking-tight">
-              New Covenant Home Services
+    <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${
+      isScrolled 
+        ? 'bg-navy-950/95 backdrop-blur-md border-b border-white/10 py-3' 
+        : 'bg-transparent py-5'
+    }`}>
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between">
+          {/* Logo */}
+          <div 
+            onClick={() => navigate('/')}
+            className="flex items-center gap-3 cursor-pointer group"
+          >
+            <div className="w-10 h-10 bg-gradient-gold rounded-lg flex items-center justify-center">
+              <Home className="w-5 h-5 text-navy-950" />
             </div>
-            <div className="text-sm text-primary/80 font-medium">
-              Professional • Reliable • Trusted
+            <div className="flex flex-col">
+              <span className="text-lg font-display font-bold text-white leading-tight">
+                New Covenant
+              </span>
+              <span className="text-xs text-white/60 font-medium tracking-wider uppercase">
+                Home Services
+              </span>
             </div>
           </div>
-        </div>
 
-        {/* Contact Info */}
-        <div className="hidden md:flex items-center gap-6">
-          <div className="flex items-center gap-2 text-white/90 hover:text-primary transition-colors group bg-white/5 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/10 hover:border-primary/30">
-            <Phone className="w-5 h-5 text-primary group-hover:animate-bounce" />
-            <a href="tel:615-390-3994" className="font-semibold">
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center gap-8">
+            <a 
+              href="#services" 
+              className="text-white/70 hover:text-white text-sm font-medium transition-colors"
+            >
+              Services
+            </a>
+            <a 
+              href="#contact" 
+              className="text-white/70 hover:text-white text-sm font-medium transition-colors"
+            >
+              Contact
+            </a>
+          </nav>
+
+          {/* Desktop CTA */}
+          <div className="hidden md:flex items-center gap-4">
+            <a 
+              href="tel:615-390-3994"
+              className="flex items-center gap-2 bg-gradient-gold text-navy-950 px-5 py-2.5 rounded-lg font-semibold text-sm hover:opacity-90 transition-opacity shadow-gold"
+            >
+              <Phone className="w-4 h-4" />
               615-390-3994
             </a>
           </div>
+
+          {/* Mobile menu button */}
+          <button 
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="md:hidden p-2 text-white"
+          >
+            {isMobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
+          </button>
         </div>
+
+        {/* Mobile menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden absolute top-full left-0 right-0 bg-navy-950/98 backdrop-blur-md border-b border-white/10">
+            <div className="container mx-auto px-4 py-6 space-y-4">
+              <a 
+                href="#services" 
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block text-white/70 hover:text-white font-medium py-2"
+              >
+                Services
+              </a>
+              <a 
+                href="#contact" 
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block text-white/70 hover:text-white font-medium py-2"
+              >
+                Contact
+              </a>
+              <a 
+                href="tel:615-390-3994"
+                className="flex items-center justify-center gap-2 bg-gradient-gold text-navy-950 px-5 py-3 rounded-lg font-semibold text-sm"
+              >
+                <Phone className="w-4 h-4" />
+                615-390-3994
+              </a>
+            </div>
+          </div>
+        )}
       </div>
     </header>
   );
