@@ -1,5 +1,4 @@
-
-import { ArrowRight, Phone, Star, Sparkles, Zap, Shield, Award, MapPin, Mail } from "lucide-react";
+import { Phone, Star, Shield, Award, MapPin, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 
@@ -7,96 +6,101 @@ export const Hero = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center bg-slate-900 overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
-        style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=5760&q=80')`
-        }}
-      />
+    <section className="relative min-h-[90vh] flex items-center bg-gradient-hero overflow-hidden grain-texture">
+      {/* Subtle background pattern */}
+      <div className="absolute inset-0 opacity-[0.03]">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+        }} />
+      </div>
       
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-slate-900/70" />
+      {/* Gold accent glow */}
+      <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-gold-500/10 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-navy-600/50 rounded-full blur-[100px] pointer-events-none" />
       
-      {/* Content */}
-      <div className="container mx-auto px-4 py-20 text-center relative z-10">
-        <div className="max-w-5xl mx-auto">
+      <div className="container mx-auto px-4 py-20 relative z-10">
+        <div className="max-w-4xl mx-auto text-center">
           
-          {/* Premium badge */}
-          <div className="inline-flex items-center gap-2 bg-teal-600/20 border border-teal-400/30 rounded-full px-6 py-3 mb-8">
-            <Zap className="w-5 h-5 text-teal-400" />
-            <span className="text-teal-300 font-semibold">Premium Property Services</span>
+          {/* Location badge */}
+          <div 
+            className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-5 py-2.5 mb-8 opacity-0 animate-fade-up"
+            style={{ animationDelay: '0.1s' }}
+          >
+            <MapPin className="w-4 h-4 text-gold-400" />
+            <span className="text-white/90 text-sm font-medium tracking-wide">Serving the Greater Pensacola Area</span>
           </div>
           
           {/* Main headline */}
-          <h1 className="text-5xl md:text-7xl font-black text-white mb-6 leading-tight">
-            Complete Property<br />
-            Maintenance & Care
+          <h1 
+            className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.1] opacity-0 animate-fade-up"
+            style={{ animationDelay: '0.2s' }}
+          >
+            Complete Property
+            <span className="block text-gradient-gold">Maintenance & Care</span>
           </h1>
           
           {/* Subheadline */}
-          <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Your trusted partner for comprehensive property care with reliable, professional service you can count on
+          <p 
+            className="text-lg md:text-xl text-white/70 mb-10 max-w-2xl mx-auto leading-relaxed opacity-0 animate-fade-up"
+            style={{ animationDelay: '0.3s' }}
+          >
+            Professional property services you can trust. From painting to hauling, 
+            landscaping to handyman work — we handle it all with precision and care.
           </p>
 
-          {/* Service area badge */}
-          <div className="inline-flex items-center gap-2 text-teal-300 mb-12">
-            <Award className="w-5 h-5" />
-            <span className="font-semibold">Proudly Serving the Greater Pensacola Area</span>
-          </div>
-
-          {/* Professional badges */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {/* 5-Star Rating */}
-            <div className="bg-white rounded-lg px-6 py-4 flex items-center gap-3 shadow-lg">
-              <div className="flex">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                ))}
-              </div>
-              <div className="text-left">
-                <p className="text-gray-800 font-bold">5.0 Rating</p>
-              </div>
-            </div>
-            
-            {/* Angi Screened */}
-            <div className="bg-white rounded-lg px-6 py-4 flex items-center gap-3 shadow-lg">
-              <Shield className="w-6 h-6 text-blue-600" />
-              <div className="text-left">
-                <p className="text-gray-800 font-bold">Angi Screened</p>
-              </div>
-            </div>
-
-            {/* Years Experience */}
-            <div className="bg-white rounded-lg px-6 py-4 flex items-center gap-3 shadow-lg">
-              <Award className="w-6 h-6 text-green-600" />
-              <div className="text-left">
-                <p className="text-gray-800 font-bold">5+ Years in Business</p>
-              </div>
-            </div>
-          </div>
-
-          {/* CTA Button */}
-          <div className="mb-12">
+          {/* CTA Buttons */}
+          <div 
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 opacity-0 animate-fade-up"
+            style={{ animationDelay: '0.4s' }}
+          >
             <Button 
               onClick={() => navigate('/services')}
-              className="bg-teal-600 hover:bg-teal-700 px-8 py-4 text-lg font-semibold rounded-lg transition-colors"
+              className="bg-gradient-gold text-navy-950 hover:opacity-90 px-8 py-6 text-base font-semibold rounded-lg shadow-gold transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
             >
-              <Sparkles className="w-5 h-5 mr-2" />
-              Our Services
+              View Our Services
+              <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
-          </div>
-
-          {/* Phone number */}
-          <div className="inline-flex items-center gap-3 bg-slate-800 rounded-lg px-6 py-4">
-            <Phone className="w-6 h-6 text-teal-400" />
-            <a href="tel:615-390-3994" className="text-2xl font-bold text-white hover:text-teal-300 transition-colors">
+            <a 
+              href="tel:615-390-3994"
+              className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/15 border border-white/20 text-white px-8 py-6 rounded-lg font-semibold transition-all duration-300"
+            >
+              <Phone className="w-4 h-4" />
               615-390-3994
             </a>
           </div>
+
+          {/* Trust badges */}
+          <div 
+            className="flex flex-wrap items-center justify-center gap-3 opacity-0 animate-fade-up"
+            style={{ animationDelay: '0.5s' }}
+          >
+            {/* 5-Star Rating */}
+            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/10 rounded-lg px-4 py-3">
+              <div className="flex">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-4 h-4 fill-gold-400 text-gold-400" />
+                ))}
+              </div>
+              <span className="text-white/90 text-sm font-medium">5.0 Rating</span>
+            </div>
+            
+            {/* Angi Screened */}
+            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/10 rounded-lg px-4 py-3">
+              <Shield className="w-4 h-4 text-gold-400" />
+              <span className="text-white/90 text-sm font-medium">Angi Screened</span>
+            </div>
+
+            {/* Years Experience */}
+            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/10 rounded-lg px-4 py-3">
+              <Award className="w-4 h-4 text-gold-400" />
+              <span className="text-white/90 text-sm font-medium">5+ Years Experience</span>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+      
+      {/* Bottom edge decoration */}
+      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent" />
+    </section>
   );
 };
