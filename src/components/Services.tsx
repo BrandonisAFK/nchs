@@ -5,37 +5,31 @@ const services = [
     icon: Truck,
     title: "Hauling & Demolition",
     description: "Complete hauling, demolition, and junk removal services. From debris removal to estate cleanouts, we handle projects of all sizes safely and efficiently.",
-    featured: true,
   },
   {
     icon: Paintbrush2,
     title: "Professional Painting",
     description: "Transform your property with expert interior and exterior painting. Premium paints, flawless techniques, and stunning results.",
-    featured: true,
   },
   {
     icon: TreePine,
     title: "Landscaping & Yard Care",
     description: "Keep your property looking pristine with lawn care, trimming, seasonal cleanup, and garden maintenance.",
-    featured: false,
   },
   {
     icon: Wrench,
     title: "Handyman Services",
     description: "From fixture repairs and furniture assembly to minor carpentry — we handle the everyday repairs that keep your property perfect.",
-    featured: false,
   },
   {
     icon: Crown,
     title: "Airbnb & Rental Care",
     description: "Turnover services, maintenance checks, and ongoing care to maximize your rental property success.",
-    featured: false,
   },
   {
     icon: Building2,
     title: "Property Management",
     description: "Full-service maintenance combining all our services. One call handles everything from repairs to renovations.",
-    featured: false,
   }
 ];
 
@@ -76,34 +70,13 @@ export const Services = () => {
           {services.map((service, index) => (
             <div 
               key={index} 
-              className={`group relative bg-card rounded-xl border transition-all duration-300 hover:shadow-professional hover:-translate-y-1 opacity-0 animate-fade-up overflow-hidden ${
-                service.featured 
-                  ? 'border-gold-200 shadow-card' 
-                  : 'border-border hover:border-navy-200'
-              }`}
+              className="group relative bg-card rounded-xl border border-border hover:border-navy-200 transition-all duration-300 hover:shadow-professional hover:-translate-y-1 opacity-0 animate-fade-up overflow-hidden"
               style={{ animationDelay: `${0.1 + index * 0.1}s` }}
             >
-              {/* Featured badge */}
-              {service.featured && (
-                <div className="absolute top-4 right-4">
-                  <span className="inline-flex items-center bg-gradient-gold text-navy-950 text-xs font-semibold px-2.5 py-1 rounded-full">
-                    Popular
-                  </span>
-                </div>
-              )}
-              
               <div className="p-6">
                 {/* Icon */}
-                <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-5 transition-colors ${
-                  service.featured 
-                    ? 'bg-gradient-gold' 
-                    : 'bg-navy-100 group-hover:bg-navy-800'
-                }`}>
-                  <service.icon className={`w-6 h-6 transition-colors ${
-                    service.featured 
-                      ? 'text-navy-950' 
-                      : 'text-navy-700 group-hover:text-white'
-                  }`} />
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-5 transition-colors bg-navy-100 group-hover:bg-navy-800">
+                  <service.icon className="w-6 h-6 transition-colors text-navy-700 group-hover:text-white" />
                 </div>
                 
                 {/* Content */}
@@ -123,11 +96,7 @@ export const Services = () => {
               </div>
               
               {/* Bottom accent line */}
-              <div className={`h-1 transition-all duration-300 ${
-                service.featured 
-                  ? 'bg-gradient-gold' 
-                  : 'bg-navy-200 group-hover:bg-navy-800'
-              }`} />
+              <div className="h-1 transition-all duration-300 bg-navy-200 group-hover:bg-navy-800" />
             </div>
           ))}
         </div>
