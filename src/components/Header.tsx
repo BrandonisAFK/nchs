@@ -42,21 +42,6 @@ export const Header = () => {
             </div>
           </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
-            <a 
-              href="#services" 
-              className="text-white/70 hover:text-white text-sm font-medium transition-colors"
-            >
-              Services
-            </a>
-            <a 
-              href="#contact" 
-              className="text-white/70 hover:text-white text-sm font-medium transition-colors"
-            >
-              Contact
-            </a>
-          </nav>
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-4">
@@ -86,20 +71,6 @@ export const Header = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 bg-navy-950/98 backdrop-blur-md border-b border-white/10">
             <div className="container mx-auto px-4 py-6 space-y-4">
-              <a 
-                href="#services" 
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="block text-white/70 hover:text-white font-medium py-2"
-              >
-                Services
-              </a>
-              <a 
-                href="#contact" 
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="block text-white/70 hover:text-white font-medium py-2"
-              >
-                Contact
-              </a>
               <a 
                 href="tel:615-390-3994"
                 className="flex items-center justify-center gap-2 bg-gradient-gold text-navy-950 px-5 py-3 rounded-lg font-semibold text-sm"
