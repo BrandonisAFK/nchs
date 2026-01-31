@@ -68,7 +68,7 @@ export const Hero = () => {
             </Button>
             <a 
               href="tel:615-390-3994"
-              className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/15 border border-white/20 text-white px-8 py-6 rounded-lg font-semibold transition-all duration-300 backdrop-blur-sm"
+              className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/15 border border-white/20 text-white px-8 py-3.5 rounded-lg font-semibold text-base transition-all duration-300 backdrop-blur-sm"
             >
               <Phone className="w-4 h-4" />
               615-390-3994
