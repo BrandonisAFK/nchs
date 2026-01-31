@@ -1,4 +1,5 @@
-import { Home, Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 export const Footer = () => {
   return (
@@ -10,14 +11,12 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-8">
           {/* Brand column */}
           <div>
-            <div className="flex items-center gap-3 mb-5">
-              <div className="w-10 h-10 bg-gradient-gold rounded-lg flex items-center justify-center">
-                <Home className="w-5 h-5 text-navy-950" />
-              </div>
-              <div>
-                <span className="font-display font-bold text-lg">New Covenant</span>
-                <span className="block text-xs text-white/60 tracking-wider uppercase">Home Services</span>
-              </div>
+            <div className="mb-5">
+              <img 
+                src={logo} 
+                alt="New Covenant Home Services LLC" 
+                className="h-16 w-auto object-contain brightness-0 invert"
+              />
             </div>
             <p className="text-white/60 text-sm leading-relaxed mb-6">
               Professional property services for the Greater Pensacola area. Quality work you can trust.
