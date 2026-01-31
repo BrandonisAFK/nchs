@@ -1,7 +1,8 @@
-import { Phone, Star, Shield, Award, MapPin, ArrowRight } from "lucide-react";
+import { Phone, Star, MapPin, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import heroBg from "@/assets/hero-bg.jpg";
+import angiLogo from "@/assets/angi-logo.png";
 
 export const Hero = () => {
   const navigate = useNavigate();
@@ -91,14 +92,13 @@ export const Hero = () => {
             
             {/* Angi Screened */}
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/10 rounded-lg px-4 py-3">
-              <Shield className="w-4 h-4 text-gold-400" />
-              <span className="text-white/90 text-sm font-medium">Angi Screened</span>
+              <img src={angiLogo} alt="Angi" className="h-4 w-auto" />
+              <span className="text-white/90 text-sm font-medium">Screened & Approved</span>
             </div>
 
-            {/* Years Experience */}
+            {/* Est. 2020 */}
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/10 rounded-lg px-4 py-3">
-              <Award className="w-4 h-4 text-gold-400" />
-              <span className="text-white/90 text-sm font-medium">5+ Years Experience</span>
+              <span className="text-white/90 text-sm font-medium">Est. 2020</span>
             </div>
           </div>
         </div>

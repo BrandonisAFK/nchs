@@ -1,6 +1,7 @@
-import { Phone, Home, Menu, X } from "lucide-react";
+import { Phone, Menu, X } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
+import logo from "@/assets/logo.png";
 
 export const Header = () => {
   const navigate = useNavigate();
@@ -27,19 +28,13 @@ export const Header = () => {
           {/* Logo */}
           <div 
             onClick={() => navigate('/')}
-            className="flex items-center gap-3 cursor-pointer group"
+            className="flex items-center cursor-pointer group"
           >
-            <div className="w-10 h-10 bg-gradient-gold rounded-lg flex items-center justify-center">
-              <Home className="w-5 h-5 text-navy-950" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-lg font-display font-bold text-white leading-tight">
-                New Covenant
-              </span>
-              <span className="text-xs text-white/60 font-medium tracking-wider uppercase">
-                Home Services
-              </span>
-            </div>
+            <img 
+              src={logo} 
+              alt="New Covenant Home Services LLC" 
+              className="h-12 w-auto object-contain"
+            />
           </div>
 
 
