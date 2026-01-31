@@ -1,5 +1,5 @@
 import { Phone, Mail, MapPin } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-transparent.png";
 
 export const Footer = () => {
   return (
@@ -15,7 +15,7 @@ export const Footer = () => {
               <img 
                 src={logo} 
                 alt="New Covenant Home Services LLC" 
-                className="h-16 w-auto object-contain brightness-0 invert"
+                className="h-16 w-auto object-contain [filter:brightness(0)_invert(1)_sepia(1)_saturate(5)_hue-rotate(350deg)]"
               />
             </div>
             <p className="text-white/60 text-sm leading-relaxed mb-6">
