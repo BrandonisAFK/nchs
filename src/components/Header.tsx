@@ -1,7 +1,7 @@
 import { Phone, Menu, X } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
-import logo from "@/assets/logo-transparent.png";
+import logo from "@/assets/logo.png";
 
 export const Header = () => {
   const navigate = useNavigate();
@@ -33,7 +33,7 @@ export const Header = () => {
             <img 
               src={logo} 
               alt="New Covenant Home Services LLC" 
-              className="h-12 w-auto object-contain"
+              className="h-14 w-auto object-contain rounded-lg"
             />
           </div>
 
