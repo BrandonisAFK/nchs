@@ -156,7 +156,7 @@ const BookNow = () => {
 
       toast({
         title: "Request Submitted!",
-        description: "We'll review your booking and contact you within 2 hours.",
+        description: "Thanks for reaching out — we'll be in contact soon!",
       });
 
       // Reset form
