@@ -5,10 +5,11 @@ import { WhyChooseUs } from "@/components/WhyChooseUs";
 import { Testimonials } from "@/components/Testimonials";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { PageTransition } from "@/components/PageTransition";
 
 const Index = () => {
   return (
-    <>
+    <PageTransition>
       <Header />
       <main className="min-h-screen">
         <Hero />
@@ -17,7 +18,7 @@ const Index = () => {
         <WhyChooseUs />
       </main>
       <Footer />
-    </>
+    </PageTransition>
   );
 };
 

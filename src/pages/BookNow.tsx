@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { PageTransition } from "@/components/PageTransition";
 import { Check, ChevronLeft, ChevronRight, Send, CalendarIcon } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -148,7 +149,7 @@ const BookNow = () => {
   };
 
   return (
-    <>
+    <PageTransition>
       <Header />
       <main className="min-h-screen bg-navy-950 pt-28 pb-20">
         <div className="container mx-auto px-4">
@@ -573,7 +574,7 @@ const BookNow = () => {
         </div>
       </main>
       <Footer />
-    </>
+    </PageTransition>
   );
 };
 
