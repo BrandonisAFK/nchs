@@ -60,19 +60,19 @@ export const Hero = () => {
             style={{ animationDelay: '0.4s' }}
           >
             <Button 
-              onClick={() => navigate('/services')}
+              onClick={() => navigate('/book')}
               className="bg-gradient-gold text-navy-950 hover:opacity-90 px-8 py-6 text-base font-semibold rounded-lg shadow-gold transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
             >
-              View Our Services
+              Book Now
               <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
-            <a 
-              href="tel:615-390-3994"
-              className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/15 border border-white/20 text-white px-8 py-3.5 rounded-lg font-semibold text-base transition-all duration-300 backdrop-blur-sm"
+            <Button 
+              onClick={() => navigate('/services')}
+              variant="outline"
+              className="bg-white/10 hover:bg-white/15 border border-white/20 text-white px-8 py-6 text-base font-semibold rounded-lg transition-all duration-300 backdrop-blur-sm hover:text-white"
             >
-              <Phone className="w-4 h-4" />
-              615-390-3994
-            </a>
+              View Our Services
+            </Button>
           </div>
 
           {/* Trust badges */}

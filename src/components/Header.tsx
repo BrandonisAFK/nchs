@@ -39,14 +39,20 @@ export const Header = () => {
 
 
           {/* Desktop CTA */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-3">
             <a 
               href="tel:615-390-3994"
-              className="flex items-center gap-2 bg-gradient-gold text-navy-950 px-5 py-2.5 rounded-lg font-semibold text-sm hover:opacity-90 transition-opacity shadow-gold"
+              className="flex items-center gap-2 bg-white/10 hover:bg-white/15 border border-white/20 text-white px-5 py-2.5 rounded-lg font-semibold text-sm transition-all backdrop-blur-sm"
             >
               <Phone className="w-4 h-4" />
               615-390-3994
             </a>
+            <button
+              onClick={() => navigate('/book')}
+              className="flex items-center gap-2 bg-gradient-gold text-navy-950 px-5 py-2.5 rounded-lg font-semibold text-sm hover:opacity-90 transition-opacity shadow-gold"
+            >
+              Book Now
+            </button>
           </div>
 
           {/* Mobile menu button */}
@@ -65,10 +71,16 @@ export const Header = () => {
         {/* Mobile menu */}
         {isMobileMenuOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 bg-navy-950/98 backdrop-blur-md border-b border-white/10">
-            <div className="container mx-auto px-4 py-6 space-y-4">
+            <div className="container mx-auto px-4 py-6 space-y-3">
+              <button
+                onClick={() => { navigate('/book'); setIsMobileMenuOpen(false); }}
+                className="w-full flex items-center justify-center gap-2 bg-gradient-gold text-navy-950 px-5 py-3 rounded-lg font-semibold text-sm"
+              >
+                Book Now
+              </button>
               <a 
                 href="tel:615-390-3994"
-                className="flex items-center justify-center gap-2 bg-gradient-gold text-navy-950 px-5 py-3 rounded-lg font-semibold text-sm"
+                className="flex items-center justify-center gap-2 bg-white/10 border border-white/20 text-white px-5 py-3 rounded-lg font-semibold text-sm"
               >
                 <Phone className="w-4 h-4" />
                 615-390-3994
