@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import { PageTransition } from "@/components/PageTransition";
 import {
   Droplets, Pipette, CloudLightning, FileText, Shield, Eye,
   Thermometer, Bug, Waves, Home, AlertTriangle, Settings,
@@ -58,7 +59,7 @@ const Services = () => {
   const navigate = useNavigate();
 
   return (
-    <>
+    <PageTransition>
       <Header />
       <main className="min-h-screen bg-navy-950">
         {/* Hero */}
@@ -86,7 +87,7 @@ const Services = () => {
                   key={index}
                   value={`service-${index}`}
                   className="border border-white/10 rounded-xl bg-white/5 px-5 data-[state=open]:border-gold-400/30 data-[state=open]:bg-white/[0.07] transition-colors opacity-0 animate-fade-up"
-                  style={{ animationDelay: `${0.05 + index * 0.03}s` }}
+                  style={{ animationDelay: `${Math.min(0.05 + index * 0.02, 0.4)}s` }}
                 >
                   <AccordionTrigger className="hover:no-underline py-5">
                     <div className="flex items-center gap-4">
@@ -120,7 +121,7 @@ const Services = () => {
         </section>
       </main>
       <Footer />
-    </>
+    </PageTransition>
   );
 };
 
