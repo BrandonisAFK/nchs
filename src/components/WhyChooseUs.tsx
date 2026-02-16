@@ -4,7 +4,7 @@ const bulletPoints = [
   "Local Pensacola experts who know coastal property challenges",
   "Personalized service plans tailored to your exact needs",
   "Premium quality materials and tools on every project",
-  "Licensed, insured, and bonded for your protection",
+  "Licensed and insured for your protection",
   "Flexible scheduling that works around your timeline",
 ];
 
