@@ -50,8 +50,9 @@ export const Hero = () => {
             className="text-lg md:text-xl text-white/70 mb-10 max-w-2xl mx-auto leading-relaxed opacity-0 animate-fade-up"
             style={{ animationDelay: '0.3s' }}
           >
-            Professional property services you can trust. From painting to hauling, 
-            landscaping to handyman work — we handle it all with precision and care.
+            Your single point of contact for complete home watch, maintenance, 
+            storm protection, and concierge services — so you never have to worry 
+            about your property, whether you're home or away.
           </p>
 
           {/* CTA Buttons */}
