@@ -52,13 +52,13 @@ export const Pricing = () => {
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
               <div>
                 <p className="text-gold-400 text-sm font-semibold uppercase tracking-wider mb-2">
-                  Example Starting Price
+                  Starting At
                 </p>
                 <h3 className="font-display text-2xl md:text-3xl font-bold text-white mb-2">
-                  Property Maintenance
+                  General Property Maintenance
                 </h3>
                 <p className="text-white/50">
-                  Biweekly visits — walkthrough, yard care, and general upkeep for a standard home.
+                  Biweekly visits — walkthrough, yard care, and general upkeep checklist for a standard home.
                 </p>
               </div>
               <div className="flex-shrink-0 text-center md:text-right">
