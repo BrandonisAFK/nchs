@@ -27,7 +27,17 @@ export const Contact = () => {
     setIsLoading(true);
 
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const formData = new FormData();
+      formData.append("form-name", "contact");
+      formData.append("name", name);
+      formData.append("phone", phone);
+      formData.append("message", message);
+
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData as any).toString(),
+      });
 
       toast({
         title: "Message Sent!",
@@ -131,7 +141,8 @@ export const Contact = () => {
               className="lg:col-span-3 opacity-0 animate-fade-up"
               style={{ animationDelay: '0.4s' }}
             >
-              <form onSubmit={handleSubmit} className="p-8 bg-card border border-border rounded-xl shadow-card space-y-5">
+              <form onSubmit={handleSubmit} name="contact" data-netlify="true" className="p-8 bg-card border border-border rounded-xl shadow-card space-y-5">
+                <input type="hidden" name="form-name" value="contact" />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-2">

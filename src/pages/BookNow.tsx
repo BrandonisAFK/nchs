@@ -128,24 +128,54 @@ const BookNow = () => {
     }
   };
 
-  const handleSubmit = () => {
-    toast({
-      title: "Request Submitted!",
-      description: "We'll review your booking and contact you within 2 hours.",
-    });
-    // Reset form
-    setCurrentStep(1);
-    setAddress("");
-    setPropertyType("Single-Family Home");
-    setSqft("");
-    setProjectDetails("");
-    setSelectedServices([]);
-    setFrequency("");
-    setPreferredDate(undefined);
-    setFullName("");
-    setEmail("");
-    setPhone("");
-    setNotes("");
+  const handleSubmit = async () => {
+    try {
+      const formData = new URLSearchParams();
+      formData.append("form-name", "booking");
+      formData.append("address", address);
+      formData.append("propertyType", propertyType);
+      formData.append("sqft", sqft);
+      formData.append("projectDetails", projectDetails);
+      formData.append("services", selectedServices.join(", "));
+      formData.append("frequency", frequency);
+      formData.append("preferredDate", preferredDate ? format(preferredDate, "MMMM d, yyyy") : "");
+      formData.append("fullName", fullName);
+      formData.append("email", email);
+      formData.append("phone", phone);
+      formData.append("notes", notes);
+
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: formData.toString(),
+      });
+
+      toast({
+        title: "Request Submitted!",
+        description: "We'll review your booking and contact you within 2 hours.",
+      });
+
+      // Reset form
+      setCurrentStep(1);
+      setAddress("");
+      setPropertyType("Single-Family Home");
+      setSqft("");
+      setProjectDetails("");
+      setSelectedServices([]);
+      setFrequency("");
+      setPreferredDate(undefined);
+      setFullName("");
+      setEmail("");
+      setPhone("");
+      setNotes("");
+    } catch (error) {
+      console.error("Error submitting booking:", error);
+      toast({
+        title: "Error",
+        description: "Failed to submit your request. Please try again.",
+        variant: "destructive",
+      });
+    }
   };
 
   return (
@@ -153,7 +183,21 @@ const BookNow = () => {
       <Header />
       <main className="min-h-screen bg-navy-950 pt-28 pb-20">
         <div className="container mx-auto px-4">
-          {/* Header */}
+          {/* Hidden Netlify form for bot detection */}
+          <form name="booking" data-netlify="true" hidden>
+            <input name="form-name" value="booking" readOnly />
+            <input name="address" />
+            <input name="propertyType" />
+            <input name="sqft" />
+            <input name="projectDetails" />
+            <input name="services" />
+            <input name="frequency" />
+            <input name="preferredDate" />
+            <input name="fullName" />
+            <input name="email" />
+            <input name="phone" />
+            <input name="notes" />
+          </form>
           <div className="text-center mb-12">
             <span className="text-gold-400 text-sm font-semibold tracking-[0.2em] uppercase">
               Get Started

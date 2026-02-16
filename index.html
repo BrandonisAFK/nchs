@@ -182,6 +182,26 @@
   </head>
   <body>
     <div id="root"></div>
+    
+    <!-- Hidden Netlify Forms for bot detection -->
+    <form name="contact" data-netlify="true" hidden>
+      <input name="name" />
+      <input name="phone" />
+      <textarea name="message"></textarea>
+    </form>
+    <form name="booking" data-netlify="true" hidden>
+      <input name="address" />
+      <input name="propertyType" />
+      <input name="sqft" />
+      <input name="projectDetails" />
+      <input name="services" />
+      <input name="frequency" />
+      <input name="preferredDate" />
+      <input name="fullName" />
+      <input name="email" />
+      <input name="phone" />
+      <input name="notes" />
+    </form>
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
