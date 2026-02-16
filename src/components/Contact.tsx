@@ -41,7 +41,7 @@ export const Contact = () => {
 
       toast({
         title: "Message Sent!",
-        description: "We'll contact you soon to discuss your project.",
+        description: "Thanks for reaching out — we'll be in contact soon!",
       });
 
       setName("");
@@ -199,7 +199,7 @@ export const Contact = () => {
                 </Button>
                 
                 <p className="text-center text-muted-foreground text-sm">
-                  We typically respond within 2 hours during business hours
+                  We'll get back to you as soon as possible
                 </p>
               </form>
             </div>
