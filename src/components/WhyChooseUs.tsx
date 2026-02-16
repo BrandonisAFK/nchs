@@ -1,36 +1,18 @@
-import { CheckCircle2, Shield, Clock, Users, Award, ThumbsUp } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 
-const reasons = [
-  {
-    icon: Users,
-    title: "Professional Team",
-    description: "Experienced, vetted staff you can trust"
-  },
-  {
-    icon: Award,
-    title: "Quality Materials",
-    description: "Premium tools and products only"
-  },
-  {
-    icon: Clock,
-    title: "Flexible Scheduling",
-    description: "We work around your timeline"
-  },
-  {
-    icon: ThumbsUp,
-    title: "Satisfaction Guaranteed",
-    description: "100% commitment to your happiness"
-  },
-  {
-    icon: Shield,
-    title: "Fully Insured",
-    description: "Licensed and covered for your protection"
-  },
-  {
-    icon: CheckCircle2,
-    title: "Competitive Pricing",
-    description: "Fair, transparent rates always"
-  },
+const bulletPoints = [
+  "Local Pensacola experts who know coastal property challenges",
+  "Personalized service plans tailored to your exact needs",
+  "Premium quality materials and tools on every project",
+  "Licensed, insured, and bonded for your protection",
+  "Flexible scheduling that works around your timeline",
+];
+
+const stats = [
+  { value: "100+", label: "Homes Served" },
+  { value: "5.0", label: "Star Rating" },
+  { value: "24/7", label: "Emergency Response" },
+  { value: "5+", label: "Years Experience" },
 ];
 
 export const WhyChooseUs = () => {
@@ -39,56 +21,68 @@ export const WhyChooseUs = () => {
       {/* Background accents */}
       <div className="absolute top-0 left-1/4 w-[400px] h-[400px] bg-gold-500/10 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-0 right-1/4 w-[300px] h-[300px] bg-navy-700/50 rounded-full blur-[100px] pointer-events-none" />
-      
+
       <div className="container mx-auto px-4 relative z-10">
-        {/* Section header */}
-        <div className="text-center mb-16">
-          <div 
-            className="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 mb-6 opacity-0 animate-fade-up"
-            style={{ animationDelay: '0.1s' }}
-          >
-            <span className="w-2 h-2 bg-gold-400 rounded-full" />
-            <span className="text-white/80 text-sm font-medium tracking-wide uppercase">Why Choose Us</span>
-          </div>
-          
-          <h2 
-            className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 opacity-0 animate-fade-up"
-            style={{ animationDelay: '0.2s' }}
-          >
-            The <span className="text-gradient-gold">New Covenant</span> Difference
-          </h2>
-          
-          <p 
-            className="text-white/60 text-lg max-w-2xl mx-auto opacity-0 animate-fade-up"
-            style={{ animationDelay: '0.3s' }}
-          >
-            We're committed to delivering exceptional results with every project
-          </p>
-        </div>
-        
-        {/* Reasons grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {reasons.map((reason, index) => (
-            <div 
-              key={index}
-              className="group p-6 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:bg-white/10 hover:border-gold-400/30 transition-all duration-300 opacity-0 animate-fade-up"
-              style={{ animationDelay: `${0.1 + index * 0.1}s` }}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          {/* Left: Text content */}
+          <div>
+            <span
+              className="inline-block text-gold-400 text-sm font-semibold tracking-wider uppercase mb-4 opacity-0 animate-fade-up"
+              style={{ animationDelay: "0.1s" }}
             >
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-gold-500/20 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-gold-500/30 transition-colors">
-                  <reason.icon className="w-6 h-6 text-gold-400" />
-                </div>
-                <div>
-                  <h3 className="font-display text-lg font-semibold text-white mb-1">
-                    {reason.title}
-                  </h3>
-                  <p className="text-white/60 text-sm leading-relaxed">
-                    {reason.description}
+              Why New Covenant
+            </span>
+
+            <h2
+              className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight opacity-0 animate-fade-up"
+              style={{ animationDelay: "0.2s" }}
+            >
+              A Covenant of Care for Your{" "}
+              <span className="text-gradient-gold">Most Valuable Asset</span>
+            </h2>
+
+            <p
+              className="text-white/60 text-lg mb-8 leading-relaxed opacity-0 animate-fade-up"
+              style={{ animationDelay: "0.3s" }}
+            >
+              We understand that your home is more than an investment — it's a
+              sanctuary. Our name reflects our promise: a steadfast commitment to
+              protecting and maintaining your property with the same care you
+              would give it yourself.
+            </p>
+
+            <ul className="space-y-4">
+              {bulletPoints.map((point, index) => (
+                <li
+                  key={index}
+                  className="flex items-start gap-3 opacity-0 animate-fade-up"
+                  style={{ animationDelay: `${0.4 + index * 0.08}s` }}
+                >
+                  <CheckCircle2 className="w-5 h-5 text-gold-400 mt-0.5 flex-shrink-0" />
+                  <span className="text-white/80 text-sm md:text-base">
+                    {point}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Right: Stats card */}
+          <div
+            className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 md:p-10 opacity-0 animate-fade-up"
+            style={{ animationDelay: "0.3s" }}
+          >
+            <div className="grid grid-cols-2 gap-8">
+              {stats.map((stat, index) => (
+                <div key={index} className="text-center">
+                  <p className="font-display text-3xl md:text-4xl font-bold text-gradient-gold mb-1">
+                    {stat.value}
                   </p>
+                  <p className="text-white/60 text-sm">{stat.label}</p>
                 </div>
-              </div>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>
