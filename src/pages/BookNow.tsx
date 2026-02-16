@@ -94,6 +94,7 @@ const BookNow = () => {
 
   // Step 2: Services
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
+  const [otherService, setOtherService] = useState("");
 
   // Step 3: Schedule
   const [frequency, setFrequency] = useState("");
@@ -118,7 +119,7 @@ const BookNow = () => {
       case 1:
         return true;
       case 2:
-        return selectedServices.length > 0;
+        return selectedServices.length > 0 || otherService.trim() !== "";
       case 3:
         return frequency !== "";
       case 4:
@@ -136,7 +137,10 @@ const BookNow = () => {
       formData.append("propertyType", propertyType);
       formData.append("sqft", sqft);
       formData.append("projectDetails", projectDetails);
-      formData.append("services", selectedServices.join(", "));
+      const allServices = otherService.trim()
+        ? [...selectedServices, `Other: ${otherService.trim()}`]
+        : selectedServices;
+      formData.append("services", allServices.join(", "));
       formData.append("frequency", frequency);
       formData.append("preferredDate", preferredDate ? format(preferredDate, "MMMM d, yyyy") : "");
       formData.append("fullName", fullName);
@@ -162,6 +166,7 @@ const BookNow = () => {
       setSqft("");
       setProjectDetails("");
       setSelectedServices([]);
+      setOtherService("");
       setFrequency("");
       setPreferredDate(undefined);
       setFullName("");
@@ -366,6 +371,20 @@ const BookNow = () => {
                       </div>
                     </div>
                   ))}
+
+                  {/* Other service */}
+                  <div>
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className="w-2.5 h-2.5 rounded-full bg-white/30" />
+                      <h3 className="text-white font-semibold text-sm">Other Service</h3>
+                    </div>
+                    <Input
+                      placeholder="Describe a service not listed above..."
+                      value={otherService}
+                      onChange={(e) => setOtherService(e.target.value)}
+                      className="h-12 bg-navy-950 border-white/10 text-white placeholder:text-white/30 focus:border-gold-500"
+                    />
+                  </div>
                 </div>
               )}
 
@@ -535,9 +554,9 @@ const BookNow = () => {
 
                     <div className="p-5 rounded-xl border border-white/10 bg-navy-950/50">
                       <p className="text-white/40 text-xs uppercase tracking-wider mb-1">
-                        Selected Services ({selectedServices.length})
+                        Selected Services ({selectedServices.length + (otherService.trim() ? 1 : 0)})
                       </p>
-                      {selectedServices.length > 0 ? (
+                      {selectedServices.length > 0 || otherService.trim() ? (
                         <div className="flex flex-wrap gap-2 mt-2">
                           {selectedServices.map((s) => (
                             <span
@@ -547,6 +566,11 @@ const BookNow = () => {
                               {s}
                             </span>
                           ))}
+                          {otherService.trim() && (
+                            <span className="text-xs bg-gold-500/10 text-gold-400 border border-gold-500/20 rounded-full px-3 py-1">
+                              Other: {otherService.trim()}
+                            </span>
+                          )}
                         </div>
                       ) : (
                         <p className="text-white/50 text-sm">None selected</p>
