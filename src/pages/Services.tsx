@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { PageTransition } from "@/components/PageTransition";
+import { Pricing } from "@/components/Pricing";
 import {
   Droplets, Pipette, CloudLightning, FileText, Shield, Eye,
   Thermometer, Bug, Waves, Home, AlertTriangle, Settings,
@@ -119,6 +120,7 @@ const Services = () => {
             </div>
           </div>
         </section>
+        <Pricing />
       </main>
       <Footer />
     </PageTransition>
