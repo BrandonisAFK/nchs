@@ -1,37 +1,37 @@
-import { Truck, Paintbrush2, TreePine, Wrench, Crown, Building2, ArrowRight } from "lucide-react";
+import { Eye, Wrench, Settings, TreePine, CloudLightning, ShoppingCart, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 
 const services = [
   {
-    icon: Truck,
-    title: "Hauling & Demolition",
-    description: "Complete hauling, demolition, and junk removal services. From debris removal to estate cleanouts, we handle it all.",
-  },
-  {
-    icon: Paintbrush2,
-    title: "Professional Painting",
-    description: "Transform your property with expert interior and exterior painting. Premium paints and flawless techniques.",
-  },
-  {
-    icon: TreePine,
-    title: "Landscaping & Yard Care",
-    description: "Keep your property pristine with lawn care, trimming, seasonal cleanup, and garden maintenance.",
+    icon: Eye,
+    title: "Absentee Home Watch",
+    description: "Routine property checks and monitoring while owners are away.",
   },
   {
     icon: Wrench,
-    title: "Handyman Services",
-    description: "Fixture repairs, furniture assembly, and minor carpentry to keep your property in top shape.",
+    title: "Handyman & Home Repairs",
+    description: "Minor to mid-level repairs, fixes, and general upkeep.",
   },
   {
-    icon: Crown,
-    title: "Airbnb & Rental Care",
-    description: "Turnover services, maintenance checks, and ongoing care to maximize your rental property success.",
+    icon: Settings,
+    title: "Property Maintenance",
+    description: "Preventive maintenance and condition management for homes.",
   },
   {
-    icon: Building2,
-    title: "Property Management",
-    description: "Full-service maintenance combining all our services. One call handles everything.",
+    icon: TreePine,
+    title: "Lawn & Exterior Care",
+    description: "Lawn mowing, yard care, and exterior upkeep.",
+  },
+  {
+    icon: CloudLightning,
+    title: "Storm Prep & Property Protection",
+    description: "Hurricane prep, securing homes, and post-storm inspections.",
+  },
+  {
+    icon: ShoppingCart,
+    title: "Concierge & Home Support",
+    description: "Groceries, arrival prep, vendor access, and homeowner assistance.",
   }
 ];
 
