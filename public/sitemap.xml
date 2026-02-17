@@ -2,152 +2,164 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://newcovenanths.com/</loc>
-        <lastmod>2025-07-16</lastmod>
+        <lastmod>2026-02-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://newcovenanths.com/property-maintenance-downtown-pensacola.html</loc>
-        <lastmod>2025-07-16</lastmod>
+        <loc>https://newcovenanths.com/services</loc>
+        <lastmod>2026-02-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://newcovenanths.com/book</loc>
+        <lastmod>2026-02-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://newcovenanths.com/painting-downtown-pensacola.html</loc>
-        <lastmod>2025-07-16</lastmod>
+        <loc>https://newcovenanths.com/locations/property-maintenance-downtown-pensacola.html</loc>
+        <lastmod>2026-02-17</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://newcovenanths.com/property-maintenance-gulf-breeze.html</loc>
-        <lastmod>2025-07-16</lastmod>
+        <loc>https://newcovenanths.com/locations/painting-downtown-pensacola.html</loc>
+        <lastmod>2026-02-17</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://newcovenanths.com/painting-gulf-breeze.html</loc>
-        <lastmod>2025-07-16</lastmod>
+        <loc>https://newcovenanths.com/locations/property-maintenance-gulf-breeze.html</loc>
+        <lastmod>2026-02-17</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://newcovenanths.com/property-maintenance-cantonment.html</loc>
-        <lastmod>2025-07-16</lastmod>
+        <loc>https://newcovenanths.com/locations/painting-gulf-breeze.html</loc>
+        <lastmod>2026-02-17</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://newcovenanths.com/painting-cantonment.html</loc>
-        <lastmod>2025-07-16</lastmod>
+        <loc>https://newcovenanths.com/locations/property-maintenance-cantonment.html</loc>
+        <lastmod>2026-02-17</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://newcovenanths.com/property-maintenance-milton.html</loc>
-        <lastmod>2025-07-16</lastmod>
+        <loc>https://newcovenanths.com/locations/painting-cantonment.html</loc>
+        <lastmod>2026-02-17</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://newcovenanths.com/painting-milton.html</loc>
-        <lastmod>2025-07-16</lastmod>
+        <loc>https://newcovenanths.com/locations/property-maintenance-milton.html</loc>
+        <lastmod>2026-02-17</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://newcovenanths.com/property-maintenance-pensacola-beach.html</loc>
-        <lastmod>2025-07-16</lastmod>
+        <loc>https://newcovenanths.com/locations/painting-milton.html</loc>
+        <lastmod>2026-02-17</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://newcovenanths.com/painting-pensacola-beach.html</loc>
-        <lastmod>2025-07-16</lastmod>
+        <loc>https://newcovenanths.com/locations/property-maintenance-pensacola-beach.html</loc>
+        <lastmod>2026-02-17</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://newcovenanths.com/property-maintenance-warrington.html</loc>
-        <lastmod>2025-07-16</lastmod>
+        <loc>https://newcovenanths.com/locations/painting-pensacola-beach.html</loc>
+        <lastmod>2026-02-17</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://newcovenanths.com/painting-warrington.html</loc>
-        <lastmod>2025-07-16</lastmod>
+        <loc>https://newcovenanths.com/locations/property-maintenance-warrington.html</loc>
+        <lastmod>2026-02-17</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://newcovenanths.com/property-maintenance-bellview.html</loc>
-        <lastmod>2025-07-16</lastmod>
+        <loc>https://newcovenanths.com/locations/painting-warrington.html</loc>
+        <lastmod>2026-02-17</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://newcovenanths.com/painting-bellview.html</loc>
-        <lastmod>2025-07-16</lastmod>
+        <loc>https://newcovenanths.com/locations/property-maintenance-bellview.html</loc>
+        <lastmod>2026-02-17</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://newcovenanths.com/property-maintenance-ensley.html</loc>
-        <lastmod>2025-07-16</lastmod>
+        <loc>https://newcovenanths.com/locations/painting-bellview.html</loc>
+        <lastmod>2026-02-17</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://newcovenanths.com/painting-ensley.html</loc>
-        <lastmod>2025-07-16</lastmod>
+        <loc>https://newcovenanths.com/locations/property-maintenance-ensley.html</loc>
+        <lastmod>2026-02-17</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://newcovenanths.com/property-maintenance-ferry-pass.html</loc>
-        <lastmod>2025-07-16</lastmod>
+        <loc>https://newcovenanths.com/locations/painting-ensley.html</loc>
+        <lastmod>2026-02-17</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://newcovenanths.com/painting-ferry-pass.html</loc>
-        <lastmod>2025-07-16</lastmod>
+        <loc>https://newcovenanths.com/locations/property-maintenance-ferry-pass.html</loc>
+        <lastmod>2026-02-17</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://newcovenanths.com/property-maintenance-brent.html</loc>
-        <lastmod>2025-07-16</lastmod>
+        <loc>https://newcovenanths.com/locations/painting-ferry-pass.html</loc>
+        <lastmod>2026-02-17</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://newcovenanths.com/painting-brent.html</loc>
-        <lastmod>2025-07-16</lastmod>
+        <loc>https://newcovenanths.com/locations/property-maintenance-brent.html</loc>
+        <lastmod>2026-02-17</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://newcovenanths.com/property-maintenance-molino.html</loc>
-        <lastmod>2025-07-16</lastmod>
+        <loc>https://newcovenanths.com/locations/painting-brent.html</loc>
+        <lastmod>2026-02-17</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://newcovenanths.com/painting-molino.html</loc>
-        <lastmod>2025-07-16</lastmod>
+        <loc>https://newcovenanths.com/locations/property-maintenance-molino.html</loc>
+        <lastmod>2026-02-17</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://newcovenanths.com/property-maintenance-mcdavid.html</loc>
-        <lastmod>2025-07-16</lastmod>
+        <loc>https://newcovenanths.com/locations/painting-molino.html</loc>
+        <lastmod>2026-02-17</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://newcovenanths.com/painting-mcdavid.html</loc>
-        <lastmod>2025-07-16</lastmod>
+        <loc>https://newcovenanths.com/locations/property-maintenance-mcdavid.html</loc>
+        <lastmod>2026-02-17</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://newcovenanths.com/locations/painting-mcdavid.html</loc>
+        <lastmod>2026-02-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
 </urlset>
