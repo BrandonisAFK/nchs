@@ -12,12 +12,6 @@ import {
   Move, KeyRound, TreePine, Armchair, Package, Sparkles, Camera,
   Search, Trash2, Monitor, Flame, Fan, SprayCan, BedDouble, Apple
 } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 
 const allServices = [
   { icon: Droplets, title: "Humidity & Mold Inspection", description: "We check your property for excess moisture, musty smells, and early signs of mold so problems get caught before they spread." },
@@ -74,41 +68,47 @@ const Services = () => {
               Everything We Do For You
             </h1>
             <p className="text-white/50 max-w-2xl mx-auto opacity-0 animate-fade-up" style={{ animationDelay: "0.3s" }}>
-              From storm prep to grocery stocking — one team handles it all so you don't have to.
+              We handle a wide range of property care services — here's a look at what we offer. Don't see what you need? Just ask. We're happy to accommodate custom requests.
             </p>
           </div>
         </section>
 
-        {/* Accordion list */}
+        {/* Services grid */}
         <section className="pb-24">
-          <div className="container mx-auto px-4 max-w-3xl">
-            <Accordion type="single" collapsible className="space-y-3">
+          <div className="container mx-auto px-4 max-w-5xl">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {allServices.map((service, index) => (
-                <AccordionItem
+                <div
                   key={index}
-                  value={`service-${index}`}
-                  className="border border-white/10 rounded-xl bg-white/5 px-5 data-[state=open]:border-gold-400/30 data-[state=open]:bg-white/[0.07] transition-colors opacity-0 animate-fade-up"
+                  className="group border border-white/10 rounded-xl bg-white/5 p-5 hover:bg-white/[0.07] hover:border-gold-400/30 transition-colors opacity-0 animate-fade-up"
                   style={{ animationDelay: `${Math.min(0.05 + index * 0.02, 0.4)}s` }}
                 >
-                  <AccordionTrigger className="hover:no-underline py-5">
-                    <div className="flex items-center gap-4">
-                      <div className="w-10 h-10 bg-gold-500/20 rounded-lg flex items-center justify-center shrink-0">
-                        <service.icon className="w-5 h-5 text-gold-400" />
-                      </div>
-                      <span className="font-display font-semibold text-white text-left text-sm md:text-base">
-                        {service.title}
-                      </span>
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 bg-gold-500/20 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
+                      <service.icon className="w-5 h-5 text-gold-400" />
                     </div>
-                  </AccordionTrigger>
-                  <AccordionContent className="text-white/50 text-sm leading-relaxed pl-14">
-                    {service.description}
-                  </AccordionContent>
-                </AccordionItem>
+                    <div>
+                      <h3 className="font-display font-semibold text-white text-sm md:text-base mb-1">
+                        {service.title}
+                      </h3>
+                      <p className="text-white/50 text-sm leading-relaxed">
+                        {service.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
               ))}
-            </Accordion>
+            </div>
+
+            {/* Custom request note */}
+            <div className="mt-8 text-center opacity-0 animate-fade-up" style={{ animationDelay: "0.45s" }}>
+              <p className="text-white/40 text-sm">
+                Need something not listed? <span className="text-gold-400">Reach out</span> — we're flexible and happy to help with custom requests.
+              </p>
+            </div>
 
             {/* CTA */}
-            <div className="text-center mt-16 opacity-0 animate-fade-up" style={{ animationDelay: "0.5s" }}>
+            <div className="text-center mt-12 opacity-0 animate-fade-up" style={{ animationDelay: "0.5s" }}>
               <p className="text-white/50 mb-6">Ready to get started?</p>
               <Button
                 onClick={() => navigate('/book')}
