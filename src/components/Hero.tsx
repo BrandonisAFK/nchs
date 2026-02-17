@@ -9,10 +9,13 @@ export const Hero = () => {
 
   return (
     <section className="relative min-h-[100vh] flex items-center overflow-hidden">
-      {/* Background image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBg})` }}
+      {/* Background image - using img for faster LCP */}
+      <img 
+        src={heroBg} 
+        alt="" 
+        fetchPriority="high"
+        decoding="async"
+        className="absolute inset-0 w-full h-full object-cover object-center"
       />
       
       {/* Dark overlay for text readability */}
