@@ -31,7 +31,7 @@ const services = [
   {
     icon: ShoppingCart,
     title: "Concierge & Home Support",
-    description: "Groceries, arrival prep, vendor access, and homeowner assistance.",
+    description: "Arrival prep, vendor access, and general homeowner assistance.",
   }
 ];
 

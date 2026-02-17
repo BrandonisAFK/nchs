@@ -8,7 +8,7 @@ import { Pricing } from "@/components/Pricing";
 import {
   Droplets, Pipette, CloudLightning, FileText, Shield, Eye,
   Thermometer, Bug, Waves, Home, AlertTriangle, Settings,
-  Car, ShoppingCart, Wind, Lightbulb, Mail, Wrench, Paintbrush2,
+  Car, Wind, Lightbulb, Mail, Wrench, Paintbrush2,
   Move, KeyRound, TreePine, Armchair, Package, Sparkles, Camera,
   Search, Trash2, Monitor, Flame, Fan, SprayCan, BedDouble, Apple
 } from "lucide-react";
@@ -27,7 +27,7 @@ const allServices = [
   { icon: AlertTriangle, title: "Leak & Sensor Verification", description: "We check for any visible leaks and confirm your water and smoke sensors are functioning." },
   { icon: Settings, title: "Appliance Exercise", description: "We run your dishwasher and washing machine periodically to keep seals from drying out and cracking." },
   { icon: Car, title: "Vehicle & Golf Cart Run-Up", description: "We start and move your vehicles or golf carts regularly to keep batteries charged and tires in shape." },
-  { icon: ShoppingCart, title: "Pre-Arrival Grocery Stocking", description: "We shop for and stock your kitchen with the groceries and essentials you request before you arrive." },
+  
   { icon: Wind, title: "House Airing & Refresh", description: "We open up and ventilate your home, then cool it down so it's fresh and comfortable when you walk in." },
   { icon: Lightbulb, title: "Light Bulb & Battery Replacement", description: "We swap out burned-out bulbs and replace household batteries in remotes, smoke detectors, and clocks." },
   { icon: Mail, title: "Mail Collection & Digitization", description: "We pick up your mail, scan anything important, and forward it to you so nothing piles up." },
