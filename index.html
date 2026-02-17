@@ -175,8 +175,109 @@
           "position": 1,
           "name": "Home",
           "item": "https://newcovenanths.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://newcovenanths.com/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Book Now",
+          "item": "https://newcovenanths.com/book"
         }
       ]
+    }
+    </script>
+
+    <!-- FAQ Schema for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What areas do you serve in Florida?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We serve the Greater Pensacola area including Gulf Breeze, Cantonment, Milton, Pensacola Beach, Warrington, Bellview, Ensley, Ferry Pass, Brent, Molino, and McDavid."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Absentee Home Watch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absentee Home Watch is a service for homeowners who are away from their property. We perform routine inspections, check for leaks, mold, pest activity, and security issues, and send you detailed reports with photos so you always know your home is safe."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does property maintenance cost in Pensacola?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our general property maintenance starts at $150 per month for biweekly visits including walkthrough, yard care, and a general upkeep checklist. Final pricing depends on property size, services needed, and frequency."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are you licensed and insured?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, New Covenant Home Services is fully licensed and insured for your protection. We are also Angi Screened & Approved with a 5.0-star rating."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer storm preparation services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we provide comprehensive storm prep including securing outdoor furniture, closing shutters, and locking down your property before a storm. After the storm, we perform a full walkthrough and send you a detailed condition report with photos."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Review/Testimonial Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Property Maintenance Services",
+      "brand": {
+        "@type": "Brand",
+        "name": "New Covenant Home Services"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "Person", "name": "Joni G." },
+          "reviewBody": "Great experience all around! Very professional. Had deck stained, 4 rooms painted. Job done professionally, on time and at a fair price."
+        },
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "Person", "name": "Brian M." },
+          "reviewBody": "Very responsive, professional and flexible. Quality work and a pleasure to work with. Highly recommend New Covenant Home Services!"
+        },
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "Person", "name": "Tracie W." },
+          "reviewBody": "The team was prompt and extremely professional. They were able to accomplish my project immediately and now my fence looks brand new."
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "127",
+        "bestRating": "5"
+      }
     }
     </script>
   </head>

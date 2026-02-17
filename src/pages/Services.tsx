@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -52,6 +53,19 @@ const allServices = [
 
 const Services = () => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    document.title = "Property Maintenance Services Pensacola FL | New Covenant Home Services";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute("content", "Full list of property maintenance, painting, storm prep, home watch, handyman, and yard care services in Pensacola FL. Licensed & insured. Call (615) 390-3994.");
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) canonical.setAttribute("href", "https://newcovenanths.com/services");
+    return () => {
+      document.title = "Property Maintenance Pensacola FL | New Covenant Home Services | (615) 390-3994";
+      if (metaDesc) metaDesc.setAttribute("content", "Professional property maintenance, painting, hauling & demolition services in Pensacola FL. 5-star rated, Angi screened. Serving Gulf Breeze, Cantonment, Milton & surrounding areas. Call (615) 390-3994 for a free estimate!");
+      if (canonical) canonical.setAttribute("href", "https://newcovenanths.com/");
+    };
+  }, []);
 
   return (
     <PageTransition>

@@ -18,7 +18,7 @@ export const Header = () => {
   }, []);
   
   return (
-    <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${
+    <header role="banner" className={`fixed w-full top-0 z-50 transition-all duration-300 ${
       isScrolled 
         ? 'bg-navy-950/95 backdrop-blur-md border-b border-white/10 py-3' 
         : 'bg-transparent py-5'
