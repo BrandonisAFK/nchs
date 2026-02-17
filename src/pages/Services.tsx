@@ -62,7 +62,7 @@ const Services = () => {
     if (canonical) canonical.setAttribute("href", "https://newcovenanths.com/services");
     return () => {
       document.title = "Property Maintenance Pensacola FL | New Covenant Home Services | (615) 390-3994";
-      if (metaDesc) metaDesc.setAttribute("content", "Professional property maintenance, painting, hauling & demolition services in Pensacola FL. 5-star rated, Angi screened. Serving Gulf Breeze, Cantonment, Milton & surrounding areas. Call (615) 390-3994 for a free estimate!");
+      if (metaDesc) metaDesc.setAttribute("content", "Pensacola FL property maintenance, Absentee Home Watch, storm prep, painting, handyman repairs, yard care, vendor access & concierge support. Licensed, insured & 5-star rated. Call (615) 390-3994 for a free estimate!");
       if (canonical) canonical.setAttribute("href", "https://newcovenanths.com/");
     };
   }, []);
