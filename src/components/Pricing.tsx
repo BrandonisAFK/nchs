@@ -1,4 +1,4 @@
-import { ArrowRight, Home, Paintbrush, Truck, Wrench, ShieldCheck, HandshakeIcon, Sparkles } from "lucide-react";
+import { ArrowRight, Home, Paintbrush, Truck, Wrench, ShieldCheck, Handshake, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 
@@ -59,7 +59,7 @@ export const Pricing = () => {
               </div>
               <div className="flex flex-col items-center text-center gap-3">
                 <div className="w-11 h-11 rounded-lg bg-gold-500/15 flex items-center justify-center">
-                  <HandshakeIcon className="w-5 h-5 text-gold-400" />
+                  <Handshake className="w-5 h-5 text-gold-400" />
                 </div>
                 <p className="text-white font-semibold">No pressure</p>
                 <p className="text-white/50 text-sm">Free estimates, zero commitment.</p>
