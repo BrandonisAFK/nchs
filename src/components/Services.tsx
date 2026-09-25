@@ -1,37 +1,37 @@
-import { Eye, Wrench, Settings, TreePine, CloudLightning, ShoppingCart, ArrowRight } from "lucide-react";
+import { Banknote, Wrench, Settings, Paintbrush2, TreePine, House, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 
 const services = [
   {
-    icon: Eye,
-    title: "Absentee Home Watch",
-    description: "Routine property checks and monitoring while owners are away.",
+    icon: Banknote,
+    title: "Direct Home Buying",
+    description: "A straightforward way to sell a house directly, including properties that need repairs.",
   },
   {
     icon: Wrench,
-    title: "Handyman & Home Repairs",
-    description: "Minor to mid-level repairs, fixes, and general upkeep.",
+    title: "Repairs & Improvements",
+    description: "Practical interior and exterior repairs that help restore, improve, and maintain a property.",
   },
   {
     icon: Settings,
     title: "Property Maintenance",
-    description: "Preventive maintenance and condition management for homes.",
+    description: "General upkeep and recurring maintenance based on the needs of the property.",
+  },
+  {
+    icon: Paintbrush2,
+    title: "Interior & Exterior Painting",
+    description: "Professional painting for rooms, exteriors, trim, fences, and other property surfaces.",
   },
   {
     icon: TreePine,
-    title: "Lawn & Exterior Care",
-    description: "Lawn mowing, yard care, and exterior upkeep.",
+    title: "Exterior & Yard Care",
+    description: "Basic yard work, cleanup, and exterior upkeep that keeps properties presentable.",
   },
   {
-    icon: CloudLightning,
-    title: "Storm Prep & Property Protection",
-    description: "Hurricane prep, securing homes, and post-storm inspections.",
-  },
-  {
-    icon: ShoppingCart,
-    title: "Concierge & Home Support",
-    description: "Arrival prep, vendor access, and general homeowner assistance.",
+    icon: House,
+    title: "Property Solutions",
+    description: "Flexible help for property needs that do not fit neatly into a standard service category.",
   }
 ];
 

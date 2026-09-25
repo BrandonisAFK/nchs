@@ -46,6 +46,12 @@ export const Header = () => {
             >
               Services
             </button>
+            <button
+              onClick={() => navigate('/contact')}
+              className="text-white/70 hover:text-white px-4 py-2.5 font-medium text-sm transition-colors"
+            >
+              Contact
+            </button>
             <a 
               href="tel:615-390-3994"
               className="flex items-center gap-2 bg-white/10 hover:bg-white/15 border border-white/20 text-white px-5 py-2.5 rounded-lg font-semibold text-sm transition-all backdrop-blur-sm"
@@ -54,10 +60,10 @@ export const Header = () => {
               615-390-3994
             </a>
             <button
-              onClick={() => navigate('/book')}
+              onClick={() => navigate('/contact')}
               className="flex items-center gap-2 bg-gradient-gold text-navy-950 px-5 py-2.5 rounded-lg font-semibold text-sm hover:opacity-90 transition-opacity shadow-gold"
             >
-              Book Now
+              Get in Touch
             </button>
           </div>
 
@@ -85,10 +91,16 @@ export const Header = () => {
                 Services
               </button>
               <button
-                onClick={() => { navigate('/book'); setIsMobileMenuOpen(false); }}
+                onClick={() => { navigate('/contact'); setIsMobileMenuOpen(false); }}
+                className="w-full text-white/70 hover:text-white px-5 py-3 rounded-lg font-medium text-sm text-center"
+              >
+                Contact
+              </button>
+              <button
+                onClick={() => { navigate('/contact'); setIsMobileMenuOpen(false); }}
                 className="w-full flex items-center justify-center gap-2 bg-gradient-gold text-navy-950 px-5 py-3 rounded-lg font-semibold text-sm"
               >
-                Book Now
+                Get in Touch
               </button>
               <a 
                 href="tel:615-390-3994"

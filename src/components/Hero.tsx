@@ -44,8 +44,8 @@ export const Hero = () => {
             className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.1] opacity-0 animate-fade-up"
             style={{ animationDelay: '0.2s' }}
           >
-            Complete Property
-            <span className="block text-gradient-gold">Maintenance & Care</span>
+            We Buy, Repair &
+            <span className="block text-gradient-gold">Maintain Properties</span>
           </h1>
           
           {/* Subheadline */}
@@ -53,9 +53,9 @@ export const Hero = () => {
             className="text-lg md:text-xl text-white/70 mb-10 max-w-2xl mx-auto leading-relaxed opacity-0 animate-fade-up"
             style={{ animationDelay: '0.3s' }}
           >
-            Your single point of contact for complete home watch, maintenance, 
-            storm protection, and concierge services — so you never have to worry 
-            about your property, whether you're home or away.
+            New Covenant Home Services buys houses directly, including properties
+            that need work. We also provide dependable repairs, painting, and
+            general maintenance throughout Greater Pensacola.
           </p>
 
           {/* CTA Buttons */}
@@ -64,10 +64,10 @@ export const Hero = () => {
             style={{ animationDelay: '0.4s' }}
           >
             <Button 
-              onClick={() => navigate('/book')}
+              onClick={() => navigate('/contact')}
               className="bg-gradient-gold text-navy-950 hover:opacity-90 px-8 py-6 text-base font-semibold rounded-lg shadow-gold transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
             >
-              Book Now
+              Contact Us
               <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
             <Button 

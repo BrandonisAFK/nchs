@@ -79,14 +79,14 @@ export const Contact = () => {
             className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 opacity-0 animate-fade-up"
             style={{ animationDelay: '0.2s' }}
           >
-            Ready to Start Your Project?
+            Let’s Talk About Your Property
           </h2>
           
           <p 
             className="text-muted-foreground text-lg max-w-2xl mx-auto opacity-0 animate-fade-up"
             style={{ animationDelay: '0.3s' }}
           >
-            Contact us today for a free consultation and quote
+            Reach out about selling a house, property repairs, painting, maintenance, or a general question.
           </p>
         </div>
         
@@ -173,10 +173,10 @@ export const Contact = () => {
                 
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
-                    Tell us about your project
+                    How can we help?
                   </label>
                   <Textarea
-                    placeholder="Describe your project needs, timeline, and any other details..."
+                    placeholder="Tell us about the property or what you need help with..."
                     className="min-h-[120px] bg-background resize-none"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
