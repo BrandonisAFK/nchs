@@ -15,12 +15,12 @@ export const Footer = () => {
             <div className="mb-5">
               <img 
                 src={logo} 
-                alt="New Covenant Home Services LLC — Property Maintenance Pensacola FL" 
+                alt="New Covenant Home Services LLC" 
                 className="h-20 w-auto object-contain rounded-lg"
               />
             </div>
             <p className="text-white/60 text-sm leading-relaxed mb-6">
-              Professional property maintenance, painting, hauling, and handyman services for the Greater Pensacola area. Licensed & insured. 5-star rated.
+              Local home buying, property repairs, painting, and general maintenance throughout the Greater Pensacola area. Licensed and insured.
             </p>
           </div>
 
@@ -35,7 +35,7 @@ export const Footer = () => {
                 <Link to="/services" className="text-white/60 hover:text-gold-400 text-sm transition-colors">Our Services</Link>
               </li>
               <li>
-                <Link to="/book" className="text-white/60 hover:text-gold-400 text-sm transition-colors">Book Now / Free Quote</Link>
+                <Link to="/contact" className="text-white/60 hover:text-gold-400 text-sm transition-colors">Contact</Link>
               </li>
             </ul>
           </nav>

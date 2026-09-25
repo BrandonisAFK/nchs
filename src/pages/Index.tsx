@@ -7,7 +7,6 @@ import { PageTransition } from "@/components/PageTransition";
 // Lazy load below-the-fold sections
 const Testimonials = lazy(() => import("@/components/Testimonials").then(m => ({ default: m.Testimonials })));
 const Services = lazy(() => import("@/components/Services").then(m => ({ default: m.Services })));
-const Pricing = lazy(() => import("@/components/Pricing").then(m => ({ default: m.Pricing })));
 const WhyChooseUs = lazy(() => import("@/components/WhyChooseUs").then(m => ({ default: m.WhyChooseUs })));
 const Contact = lazy(() => import("@/components/Contact").then(m => ({ default: m.Contact })));
 
@@ -25,7 +24,6 @@ const Index = () => {
           <Testimonials />
           <Services />
           <WhyChooseUs />
-          <Pricing />
           <Contact />
         </Suspense>
       </main>

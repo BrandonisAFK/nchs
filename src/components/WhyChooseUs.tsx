@@ -1,11 +1,11 @@
 import { CheckCircle2 } from "lucide-react";
 
 const bulletPoints = [
-  "Local Pensacola experts who know coastal property challenges",
-  "Personalized service plans tailored to your exact needs",
-  "Premium quality materials and tools on every project",
+  "Local experience throughout the Greater Pensacola area",
+  "Straightforward communication from the first conversation",
+  "Practical solutions tailored to the property and situation",
   "Licensed and insured for your protection",
-  "Flexible scheduling that works around your timeline",
+  "Respectful, dependable service from a local company",
 ];
 
 const stats = [
@@ -37,18 +37,18 @@ export const WhyChooseUs = () => {
               className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight opacity-0 animate-fade-up"
               style={{ animationDelay: "0.2s" }}
             >
-              A Covenant of Care for Your{" "}
-              <span className="text-gradient-gold">Most Valuable Asset</span>
+              One Local Company for{" "}
+              <span className="text-gradient-gold">Real Property Solutions</span>
             </h2>
 
             <p
               className="text-white/60 text-lg mb-8 leading-relaxed opacity-0 animate-fade-up"
               style={{ animationDelay: "0.3s" }}
             >
-              We understand that your home is more than an investment — it's a
-              sanctuary. Our name reflects our promise: a steadfast commitment to
-              protecting and maintaining your property with the same care you
-              would give it yourself.
+              Whether you are considering selling a house, planning repairs, or
+              looking for dependable maintenance, we keep the process clear and
+              practical. Our name reflects a commitment to honest communication,
+              careful work, and respect for every property.
             </p>
 
             <ul className="space-y-4">
