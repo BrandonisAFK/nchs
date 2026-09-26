@@ -20,9 +20,9 @@
 /services/maid / 301
 
 # Contact redirects
-/contact / 301
-/quote / 301
-/estimate / 301
+/book /contact 301
+/quote /contact 301
+/estimate /contact 301
 
 # Service area redirects
 /pensacola / 301
