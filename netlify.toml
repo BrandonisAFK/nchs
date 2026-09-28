@@ -43,3 +43,28 @@
   pretty_urls = true
 [build.processing.images]
   compress = true
+
+# Page rules: keep in-app pages loading on direct visits and refreshes,
+# and send old booking/quote links to the contact page.
+[[redirects]]
+  from = "/book"
+  to = "/contact"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/quote"
+  to = "/contact"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/estimate"
+  to = "/contact"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
