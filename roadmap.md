@@ -3,4 +3,4 @@
 - [x] Remove Home Watch and booking language/routes/UI
 - [x] Make Contact the sole action and keep the site informational
 - [x] Update SEO metadata, schemas, sitemap, and preserve relevant service-area content
-- [ ] Verify desktop/mobile behavior and publish
+- [x] Verify desktop/mobile behavior and deploy (live: contact, services, /book redirect all verified)
